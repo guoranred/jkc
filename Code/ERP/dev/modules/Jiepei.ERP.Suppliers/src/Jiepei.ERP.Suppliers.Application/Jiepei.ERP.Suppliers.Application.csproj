@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Jiepei.ERP.Suppliers</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="4.3.3" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="4.3.3" />
+    <ProjectReference Include="..\Jiepei.ERP.Suppliers.Application.Contracts\Jiepei.ERP.Suppliers.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Jiepei.ERP.Suppliers.Domain\Jiepei.ERP.Suppliers.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

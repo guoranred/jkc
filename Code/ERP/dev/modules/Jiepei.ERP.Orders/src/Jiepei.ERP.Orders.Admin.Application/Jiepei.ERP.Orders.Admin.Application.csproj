@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="SubOrders\**" />
+	  <EmbeddedResource Remove="SubOrders\**" />
+	  <None Remove="SubOrders\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.AutoMapper" Version="4.3.3" />
+		<PackageReference Include="Volo.Abp.Ddd.Application" Version="4.3.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\..\shareds\Jiepei.ERP.DeliverCenters\Jiepei.ERP.DeliverCentersClient.csproj" />
+		<ProjectReference Include="..\..\..\..\shareds\Jiepei.ERP.Utilities\Jiepei.ERP.Utilities.csproj" />
+		<ProjectReference Include="..\..\..\Jiepei.ERP.Members\src\Jiepei.ERP.Members.Admin.Application\Jiepei.ERP.Members.Admin.Application.csproj" />
+		<ProjectReference Include="..\..\..\Jiepei.ERP.Members\src\Jiepei.ERP.Members.Application.Contracts\Jiepei.ERP.Members.Application.Contracts.csproj" />
+		<ProjectReference Include="..\..\..\Jiepei.ERP.Suppliers\src\Jiepei.ERP.Suppliers.Application\Jiepei.ERP.Suppliers.Application.csproj" />
+		<ProjectReference Include="..\Jiepei.ERP.Orders.Admin.Application.Contracts\Jiepei.ERP.Orders.Admin.Application.Contracts.csproj" />
+		<ProjectReference Include="..\Jiepei.ERP.Orders.Application.External\Jiepei.ERP.Orders.Application.External.csproj" />
+		<ProjectReference Include="..\Jiepei.ERP.Orders.Domain\Jiepei.ERP.Orders.Domain.csproj" />
+	</ItemGroup>
+
+</Project>

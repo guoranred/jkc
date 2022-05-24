@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jiepei.ERP.Application</name>
+    </assembly>
+    <members>
+        <member name="M:Jiepei.ERP.Pays.PayAppService.GetTotalAmount(System.Collections.Generic.List{Jiepei.ERP.Orders.Orders.Dtos.OrderDto})">
+            <summary>
+            获取订单支付金额
+            </summary>
+            <param name="order"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Pays.PayAppService.GetAlipayCodeAsync(System.String,System.String,System.String)">
+            <summary>
+            支付宝
+            </summary>
+            <param name="subject">订单标题</param>
+            <param name="outTradeNo">商户订单号</param>
+            <param name="totalAmount">订单总金额</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Pays.PayAppService.RenderQrCodeToBase64(System.String)">
+            <summary>
+            渲染二维码，并转换成base64
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

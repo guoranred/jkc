@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<RootNamespace>Jiepei.ERP.Suppliers</RootNamespace>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+		<DocumentationFile>obj\Debug\net5.0\Jiepei.ERP.Suppliers.HttpApi.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="4.3.3" />
+		<ProjectReference Include="..\Jiepei.ERP.Suppliers.Application.Contracts\Jiepei.ERP.Suppliers.Application.Contracts.csproj" />
+	</ItemGroup>
+
+</Project>

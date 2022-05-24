@@ -1,0 +1,105 @@
+.memberhader-wrap {
+  display: flex;
+  height: 100%;
+  background-color: #009B77;
+}
+.memberhader-wrap .logo-wrap {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.memberhader-wrap .logo-wrap .logo {
+  width: 60px;
+  height: 67px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-top: 4px;
+}
+.memberhader-wrap .logo-wrap h5 {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+}
+.memberhader-wrap .logo-wrap p {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 16px;
+}
+.memberhader-wrap .menu {
+  display: flex;
+  flex: 1;
+  min-width: 500px;
+}
+.memberhader-wrap .menu li {
+  font-size: 16px;
+  line-height: 80px;
+  color: #ffffff;
+  margin: 0 20px;
+  position: relative;
+}
+.memberhader-wrap .menu .menu-hot::after {
+  content: 'HOT';
+  background: linear-gradient(to right, #FF9800, #FF6900);
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  padding: 1px 2px 0;
+  border-radius: 3px 3px 3px 0;
+  position: absolute;
+  top: 14px;
+  right: -28px;
+}
+.memberhader-wrap .member-wrap {
+  display: flex;
+}
+.memberhader-wrap .member-info {
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding-right: 22px;
+  border-right: 1px solid rgba(240,241,248,0.2);
+}
+.memberhader-wrap .member-info a {
+  color: #ffffff;
+}
+.memberhader-wrap .member-info .member-info-name {
+  margin-right: 10px;
+}
+.memberhader-wrap .member-info i {
+  margin-right: 15px;
+  color: #F0F1F8;
+  position: relative;
+  top: -1px;
+}
+.memberhader-wrap .member-menu {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.memberhader-wrap .member-menu a {
+  margin: 0 20px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+.memberhader-wrap .member-menu p {
+  margin-top: 4px;
+}
+.memberhader-wrap .member-menu .cartnum {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: -7px;
+  right: 4px;
+  background-color: #253746;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+}

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Jiepei.ERP.News</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Http.Client" Version="4.3.3" />
+    <ProjectReference Include="..\Jiepei.ERP.News.Application.Contracts\Jiepei.ERP.News.Application.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

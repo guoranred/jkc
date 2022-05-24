@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Jiepei.ERP</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\modules\Jiepei.ERP.News\src\Jiepei.ERP.News.HttpApi.Client\Jiepei.ERP.News.HttpApi.Client.csproj" />
+    <ProjectReference Include="..\..\modules\Jiepei.ERP.Orders\src\Jiepei.ERP.Orders.HttpApi.Client\Jiepei.ERP.Orders.HttpApi.Client.csproj" />
+    <ProjectReference Include="..\..\modules\Jiepei.ERP.Suppliers\src\Jiepei.ERP.Suppliers.HttpApi.Client\Jiepei.ERP.Suppliers.HttpApi.Client.csproj" />
+    <ProjectReference Include="..\Jiepei.ERP.Application.Contracts\Jiepei.ERP.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.FeatureManagement.HttpApi.Client" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.SettingManagement.HttpApi.Client" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>

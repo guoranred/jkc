@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="变色龙3D打印为您提供定制化的3D打印制造方案服务，包括树脂3D打印、尼龙3D打印、光固化3D打印等3D打印加工，帮助企业解决研发初期样件、小批量外观产品市场推广需求。">
+  <meta name="keywords" content="3D打印,3D打印服务,3D打印技术,树脂3D打印,尼龙3D打印,光固化3D打印,3D打印模型">
+  <title>会员中心_我的资料_3D打印_3D打印模具_变色龙3D打印服务</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
+  <link rel="stylesheet" href="../assets/layui-v2.6.8/css/layui.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/memberCenter/layout.css">
+  <link rel="stylesheet" href="../css/memberCenter/memberHeader.css">
+  <link rel="stylesheet" href="../css/memberCenter/memberSideBar.css">
+  <link rel="stylesheet" href="../css/memberCenter/memberFooter.css">
+  <link rel="stylesheet" href="../css/memberCenter/personalInformation.css">
+</head>
+<body>
+  <!-- 会员公共头 -->
+  <div id="memberHeader"></div>
+  <div class="membercontent-box">
+    <!-- 会员导航 -->
+    <div id="memberSideBar"></div>
+    <div class="membercontent-wrap">
+      <div class="membercontent">
+        <div class="personal-maintitle">我的资料</div>
+        <div class="personal-reason">
+          <div class="personal-reason-title">为什么要完善信息？</div>
+          <!-- <div class="personal-reason-text">1、完善企业认证信息，可享受企业会员专属特权！</div> -->
+          <div class="personal-reason-text">1、完善信息可更快捷的了解最新活动！</div>
+        </div>
+        <!-- 基本资料 -->
+        <div class="personal-baseinfo">
+          <div class="personal-subtitle">基本资料</div>
+          <form class="layui-form" action="" lay-filter="baseInfoForm">
+            <div class="layui-form-item">
+              <label class="layui-form-label layui-required">当前头像</label>
+              <div class="layui-input-block w300">
+                <input type="file" class="fileUpload" accept="image/*" value="" hidden onchange="getUploadFile(this)">
+                <img class="member-headimg" src="../images/memberCenter/default-userhead.png" alt="">
+                <a href="javascript:;" class="layui-btn layui-btn-sm" id="uploadHeadImg">上传</a>
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label layui-required">昵称</label>
+              <div class="layui-input-block w300">
+                <input type="text" name="name" lay-verify="username" autocomplete="off" class="layui-input" disabled>
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label layui-required">性别</label>
+              <div class="layui-input-block w300">
+                <input type="radio" class="radio-sex" name="sex" value="0" title="先生" lay-verify="sex" disabled>
+                <input type="radio" class="radio-sex" name="sex" value="1" title="女士" lay-verify="sex" disabled>
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label layui-required">QQ</label>
+              <div class="layui-input-block w300">
+                <input type="text" name="qq" lay-verify="qq|number" autocomplete="off" class="layui-input" disabled>
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <label class="layui-form-label layui-required">办公所在地</label>
+              <div class="layui-input-block w300">
+                <div class="layui-inline province">
+                  <select name="province" lay-verify="province" lay-filter="province" class="infoProvince select-area" disabled>
+                    <option value="-">--省--</option>
+                  </select>
+                </div>
+                <div class="layui-inline city">
+                  <select name="city" lay-verify="city" class="infoCity select-area" disabled>
+                    <option value="-">--市--</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="layui-form-item">
+              <div class="layui-input-block w300">
+                <a href="javascript:;" class="layui-btn layui-btn-sm personal-submit" lay-submit lay-filter="personalBaseForm">保存</a>
+                <a href="javascript:;" class="layui-btn layui-btn-sm personal-edit" onclick="handleEdit()">编辑</a>
+                <!-- <button type="reset" class="layui-btn layui-btn-primary">重置</button> -->
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- 会员公共底 -->
+      <div id="memberFooter"></div>
+    </div>
+  </div>
+
+  <script src="../js/jquery-3.6.0.js"></script>
+  <script src="../assets/layui-v2.6.8/layui.js"></script>
+  <script>
+		var now = 20210806;
+		document.write('<script src="../js/ajax.js?v=' + now + '"><\/script\>');
+    // 公共头和底加载
+		document.write('<script src="../js/memberCenter/loadHtml.js?v=' + now + '"><\/script\>');
+		document.write('<script src="../js/memberCenter/personalInformation.js?v=' + now + '"><\/script\>');
+	</script>
+</body>
+</html>

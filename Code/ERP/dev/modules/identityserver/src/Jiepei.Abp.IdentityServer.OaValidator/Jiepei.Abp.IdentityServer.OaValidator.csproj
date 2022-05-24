@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.IdentityServer.Domain" Version="4.3.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="Jiepei\Abp\IdentityServer\Localization\OaValidator\en.json" />
+		<None Remove="Jiepei\Abp\IdentityServer\Localization\OaValidator\zh-Hans.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Jiepei\Abp\IdentityServer\Localization\OaValidator\en.json" />
+		<EmbeddedResource Include="Jiepei\Abp\IdentityServer\Localization\OaValidator\zh-Hans.json" />
+	</ItemGroup>
+</Project>

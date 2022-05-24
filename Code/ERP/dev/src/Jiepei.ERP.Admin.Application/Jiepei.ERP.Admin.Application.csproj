@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <DocumentationFile></DocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\modules\Jiepei.ERP.Members\src\Jiepei.ERP.Members.Admin.Application\Jiepei.ERP.Members.Admin.Application.csproj" />
+		<ProjectReference Include="..\..\modules\Jiepei.ERP.News\src\Jiepei.ERP.News.Admin.Application\Jiepei.ERP.News.Admin.Application.csproj" />
+		<ProjectReference Include="..\..\modules\Jiepei.ERP.Orders\src\Jiepei.ERP.Orders.Admin.Application\Jiepei.ERP.Orders.Admin.Application.csproj" />
+		<ProjectReference Include="..\..\modules\Jiepei.ERP.Suppliers\src\Jiepei.ERP.Suppliers.Application\Jiepei.ERP.Suppliers.Application.csproj" />
+		<ProjectReference Include="..\Jiepei.ERP.Admin.Application.Contracts\Jiepei.ERP.Admin.Application.Contracts.csproj" />
+		<ProjectReference Include="..\Jiepei.ERP.Domain\Jiepei.ERP.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ClosedXML" Version="0.95.4" />
+		<PackageReference Include="Volo.Abp.Account.Application" Version="4.3.0" />
+		<PackageReference Include="Volo.Abp.Identity.Application" Version="4.3.0" />
+		<PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="4.3.0" />
+		<PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="4.3.0" />
+		<PackageReference Include="Volo.Abp.SettingManagement.Application" Version="4.3.0" />
+		<PackageReference Include="EasyAbp.Abp.DataDictionary.Application" Version="1.0.7" />
+	</ItemGroup>
+</Project>

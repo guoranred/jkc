@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jiepei.ERP.Orders.Admin.Application</name>
+    </assembly>
+    <members>
+        <member name="M:Jiepei.ERP.Orders.Channels.ChannelAppService.CreateAsync(Jiepei.ERP.Orders.Channels.Dtos.CreateChannelDto)">
+            <summary>
+            创建渠道
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.Channels.ChannelAppService.GetAsync(System.Guid)">
+            <summary>
+            获取渠道信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.Channels.ChannelAppService.IsEnableAsnyc(System.Guid)">
+            <summary>
+            是否启用
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.Channels.ChannelAppService.PutEnableAsnyc(System.Guid,System.Boolean)">
+            <summary>
+            设置渠道启用状态
+            </summary>
+            <param name="id"></param>
+            <param name="isEnable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.Materials.MaterialAppService.CreateD3MaterialAsync(Jiepei.ERP.Orders.Materials.Dtos.CreateD3MaterialExtraDto)">
+            <summary>
+            添加3d材料
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.Materials.MaterialAppService.UpdateD3MaterialAsync(System.Guid,Jiepei.ERP.Orders.Materials.Dtos.UpdateD3MaterialExtraDto)">
+            <summary>
+            修改3d材料
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.Materials.MaterialAppService.DeleteD3MaterialAsync(System.Guid)">
+            <summary>
+            删除3d材料
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.Materials.MaterialAppService.GetListMaterialPriceAsync(System.Guid)">
+            <summary>
+            获取3d材料渠道配置列表
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.Materials.MaterialAppService.CreateMaterialPriceAsync(Jiepei.ERP.Orders.Materials.Dtos.CreateMaterialPriceDto)">
+            <summary>
+            添加3d材料渠道配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.Materials.MaterialAppService.UpdateMaterialPriceAsync(System.Guid,Jiepei.ERP.Orders.Materials.Dtos.UpdateMaterialPriceDto)">
+             <summary>
+            修改3d材料渠道配置
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.Materials.MaterialAppService.DeleteMaterialPriceAsync(System.Guid)">
+            <summary>
+            删除3d材料渠道配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.Admin.OrderManagementAppService.GetCustomerServiceOrderDetail(System.Guid,Jiepei.ERP.Orders.EnumOrderType)">
+            <summary>
+            客服订单详情
+            </summary>
+            <param name="id"></param>
+            <param name="orderType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.Admin.OrderManagementAppService.GetEnginnerOrderDetail(System.Guid,Jiepei.ERP.Orders.EnumOrderType)">
+            <summary>
+            工程师订单详情
+            </summary>
+            <param name="id"></param>
+            <param name="orderType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.Admin.OrderManagementAppService.GetCustomerServiceOrderListAsync(Jiepei.ERP.Orders.Admin.GetCustomerServiceOrderInput)">
+            <summary>
+            客服订单列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.Admin.OrderManagementAppService.GetEnginnerOrderListAsync(Jiepei.ERP.Orders.Admin.GetEngineerOrderInput)">
+            <summary>
+            工程师订单列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.Admin.OrderManagementAppService.CreateAsync(Jiepei.ERP.Orders.Admin.CreateOrderExtraDto)">
+            <summary>
+            创建订单
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.Admin.OrderManagementAppService.PutEditNoteAsync(System.Guid,Jiepei.ERP.Orders.Admin.EditNoteInput)">
+            <summary>
+             编辑客服备注
+            </summary>
+            <param name="id">订单 Id</param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.Admin.OrderManagementAppService.GetAsync(System.Guid)">
+            <summary>
+            获取订单
+            </summary>
+            <param name="id">订单 Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.Admin.OrderManagementAppService.GetOrderLogsAsync(System.String)">
+            <summary>
+            获取订单操作记录
+            </summary>
+            <param name="orderNo">订单号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.Admin.OrderManagementAppService.GetListAsync(Jiepei.ERP.Orders.Admin.GetOrderListDto)">
+            <summary>
+            获取订单列表
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.SubOrders.SubOrderAppService.CreateAsync(Jiepei.ERP.Orders.Admin.CreateOrderExtraDto)">
+            <summary>
+            创建订单
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.SubOrders.SubOrderAppService.GetDetailAsync(System.Guid,Jiepei.ERP.Orders.EnumOrderType)">
+            <summary>
+            获取订单详情
+            </summary>
+            <param name="id">主订单 Id</param>
+            <param name="orderType">订单类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.SubOrders.SubOrderAppService.CancelAsync(System.Guid,Jiepei.ERP.Orders.SubOrders.Dtos.CancelInput)">
+            <summary>
+            取消订单
+            </summary>
+            <param name="id">主订单 Id</param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.SubOrders.SubOrderAppService.CompleteAsync(System.Guid,Jiepei.ERP.Orders.SubOrders.Dtos.CompleteInput)">
+            <summary>
+            完成订单
+            </summary>
+            <param name="id">主订单 Id</param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.SubOrders.SubOrderAppService.DeliverAsync(System.Guid,Jiepei.ERP.Orders.SubOrders.Dtos.DeliverInput)">
+            <summary>
+            发货
+            </summary>
+            <param name="id">主订单 Id</param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.SubOrders.SubOrderAppService.ManufactureAsync(System.Guid,Jiepei.ERP.Orders.SubOrders.Dtos.ManufactureInput)">
+            <summary>
+            投产
+            </summary>
+            <param name="id">主订单 Id</param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.SubOrders.SubOrderAppService.OfferAsync(System.Guid,Jiepei.ERP.Orders.SubOrders.Dtos.OfferInput)">
+            <summary>
+            报价
+            </summary>
+            <param name="id">主订单 Id</param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.SubOrders.SubOrderAppService.DeliveryDays(System.Guid,Jiepei.ERP.Orders.SubOrders.Dtos.DeliveryDaysInput)">
+            <summary>
+            修改交期
+            </summary>
+            <param name="id"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.SubOrders.SubOrderAppService.GetMoldOrderExtraDtoAsync(System.Guid)">
+            <summary>
+            获取模具扩展信息
+            </summary>
+            <param name="id">子订单 Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.SubOrders.SubOrderAppService.GetInjectionOrderExtraDtoAsync(System.Guid)">
+            <summary>
+            获取注塑扩展信息
+            </summary>
+            <param name="id">子订单 Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.SubOrders.SubOrderAppService.GetCncOrderExtraDtoAsync(System.Guid)">
+            <summary>
+            获取 CNC 扩展信息
+            </summary>
+            <param name="id">子订单 Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.SubOrders.SubOrderExtraAppService.CreateOrderCostExterAsync(System.String,Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderCostDto)">
+            <summary>
+            创建订单金额数据
+            </summary>
+            <param name="orderNo"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.SubOrders.SubOrderExtraAppService.CreateOrderDeliverieExterAsync(System.String,Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDeliveryDto)">
+            <summary>
+            创建订单地址信息
+            </summary>
+            <param name="orderNo"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.SubOrders.SubOrderExtraAppService.SetSubOrderStatusAsync(System.Guid,Jiepei.ERP.SubOrders.EnumSubOrderStatus)">
+            <summary>
+            修改子订单状态
+            </summary>
+            <param name="OrderId">订单id</param>
+            <param name="status">状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.SubOrders.SubOrderExtraAppService.SetOrderStatusAsync(System.Guid,Jiepei.ERP.SubOrders.EnumSubOrderStatus)">
+            <summary>
+            修改订单状态
+            </summary>
+            <param name="Id">订单号</param>
+            <param name="status">状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.SubOrders.SubOrderExtraAppService.TransformSubOrderStatusToOrderStatus(Jiepei.ERP.SubOrders.EnumSubOrderStatus)">
+            <summary>
+            子订单状态转换成订单状态
+            </summary>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.SubOrders.SubOrderExtraAppService.CreateOrderLogAsync(System.String,System.String)">
+            <summary>
+            创建订单操作日志
+            </summary>
+            <param name="orderNo">订单号</param>
+            <param name="note">日志内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jiepei.ERP.Orders.SubOrders.SubOrderExtraAppService.CreateSubOrderFlowAsync(System.String,Jiepei.ERP.SubOrders.EnumSubOrderFlowType,System.String,System.String)">
+            <summary>
+            创建子订单流程
+            </summary>
+            <param name="childOrderNo"></param>
+            <param name="type"></param>
+            <param name="remark"></param>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>支付订单</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico"/>
+  <link rel="stylesheet" href="./assets/layui-v2.6.8/css/layui.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/pay.css">
+</head>
+<body>
+  <!-- 公共头部 -->
+  <div id="header"></div>
+  <div class="pay-wrap w1280">
+    <div class="pay-order-info">
+      <div class="pay-order-info-title">支付订单</div>
+      <p class="price-wrap">应付金额：<span class="pay-order-price"></span></p>
+      <p>订单编号：<span class="pay-order-no"></span></p>
+      <p>数量：<span class="pay-order-num"></span></p>
+    </div>
+    <div class="pay-type-tab">
+      <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+        <ul class="layui-tab-title">
+          <li class="layui-this">
+            <img src="./images/pay-wechat.png" alt="">
+            <span>微信支付</span>
+          </li>
+          <li>
+            <img src="./images/pay-ali.png" alt="">
+            <span>支付宝支付</span>
+          </li>
+        </ul>
+        <div class="layui-tab-content">
+          <div class="layui-tab-item layui-show">
+            <div class="clearfix">
+              <div class="fl left">
+                <!-- <p class="count-tip">距离二维码过期还剩 <span class="count-num-wx">44</span> 秒，过期后请刷新页面重新获取二维码。</p> -->
+                <div class="qrcode-box">
+                  <div class="qrcode-box-wrap">
+                    <img class="qrcode-wx" src="" alt="">
+                  </div>
+                  <p class="scancode-tip">请使用微信扫一扫 扫描二维码支付</p>
+                </div>
+                <p class="scancode-fail">若支付失败，<span data-type="1">点击此处</span> 刷新二维码后重试</p>
+              </div>
+              <div class="fl">
+                <img class="scancode-demo" src="./images/pay-wechat-demo.png" alt="">
+              </div>
+              <div class="fl right">
+                <p class="right-tip">温馨提示：</p>
+                <!-- <p class="right-tip">● 您还未进行企业认证，可进行私对公转账，点击申请企业认证（后台认证链接）。</p> -->
+                <p class="right-tip">● 付款时间（非下单时间）交期计算方式：</p>
+                <p class="right-tip">(1) 17点30分前付款交期从当天开始计算；</p>
+                <p class="right-tip">(2) 17点30分后更新文件或确认工程问题，<br>交期从次日开始计算；</p>
+                <p class="right-tip">(3) 周六和周日付款，交期从周一开始计算；</p>
+              </div>
+            </div>
+          </div>
+          <div class="layui-tab-item">
+            <div class="clearfix">
+              <div class="fl left">
+                <!-- <p class="count-tip">距离二维码过期还剩 <span class="count-num-ali">44</span> 秒，过期后请刷新页面重新获取二维码。</p> -->
+                <div class="qrcode-box">
+                  <div class="qrcode-box-wrap">
+                    <img class="qrcode-ali" src="" alt="">
+                  </div>
+                  <p class="scancode-tip">请使用支付宝扫一扫 扫描二维码支付</p>
+                </div>
+                <p class="scancode-fail">若支付失败，<span data-type="2">点击此处</span> 刷新二维码后重试</p>
+              </div>
+              <div class="fl">
+                <img class="scancode-demo" src="./images/pay-ali-demo.png" alt="">
+              </div>
+              <div class="fl right">
+                <p class="right-tip">温馨提示：</p>
+                <!-- <p class="right-tip">● 您还未进行企业认证，可进行私对公转账，点击申请企业认证（后台认证链接）。</p> -->
+                <p class="right-tip">● 付款时间（非下单时间）交期计算方式：</p>
+                <p class="right-tip">(1) 17点30分前付款交期从当天开始计算；</p>
+                <p class="right-tip">(2) 17点30分后更新文件或确认工程问题，<br>交期从次日开始计算；</p>
+                <p class="right-tip">(3) 周六和周日付款，交期从周一开始计算；</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <div class="pay-order-bottom clearfix">
+      <div class="fl">
+        <h5>您是否已支付成功？</h5>
+        <p>付款成功将在会员消息中心通知您</p>
+      </div>
+      <div class="fl">
+        <a href="javascript:;" class="pay-problem">支付遇到问题</a>
+      </div>
+    </div>
+  </div>
+  <!-- 公共底部 -->
+  <div id="footer"></div>
+  <script src="./js/jquery-3.6.0.js"></script>
+  <script src="./assets/layui-v2.6.8/layui.js"></script>
+  <script>
+		var now = 20210806;
+		document.write('<script src="./js/ajax.js?v=' + now + '"><\/script\>');
+		document.write('<script src="./js/util.js?v=' + now + '"><\/script\>');
+		document.write('<script src="./js/const.js?v=' + now + '"><\/script\>');
+    // 公共头和底加载
+		document.write('<script src="./js/loadCommonHtml.js?v=' + now + '"><\/script\>');
+		document.write('<script src="./js/pay.js?v=' + now + '"><\/script\>');
+	</script>
+</body>
+</html>

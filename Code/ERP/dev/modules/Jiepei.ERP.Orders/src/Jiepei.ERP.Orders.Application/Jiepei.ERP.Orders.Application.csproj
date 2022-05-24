@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<RootNamespace>Jiepei.ERP.Orders</RootNamespace>
+
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <WarningLevel>5</WarningLevel>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="CncOrders\**" />
+	  <Compile Remove="InjectionOrders\**" />
+	  <Compile Remove="MoldOrders\**" />
+	  <EmbeddedResource Remove="CncOrders\**" />
+	  <EmbeddedResource Remove="InjectionOrders\**" />
+	  <EmbeddedResource Remove="MoldOrders\**" />
+	  <None Remove="CncOrders\**" />
+	  <None Remove="InjectionOrders\**" />
+	  <None Remove="MoldOrders\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Remove="SubOrders\CncOrderExtraAppService.cs" />
+	  <Compile Remove="SubOrders\InjectionOrderExtraAppService.cs" />
+	  <Compile Remove="SubOrders\MoldOrderExtraAppService.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+		<PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0-preview.6.21352.12" />
+		<PackageReference Include="Refit" Version="6.1.15" />
+		<PackageReference Include="Volo.Abp.AutoMapper" Version="4.3.3" />
+		<PackageReference Include="Volo.Abp.Ddd.Application" Version="4.3.3" />
+		<ProjectReference Include="..\..\..\..\shareds\Jiepei.ERP.DeliverCenters\Jiepei.ERP.DeliverCentersClient.csproj" />
+		<ProjectReference Include="..\..\..\..\shareds\Jiepei.ERP.EventBus.Shared\Jiepei.ERP.EventBus.Shared.csproj" />
+		<ProjectReference Include="..\..\..\..\shareds\Jiepei.ERP.Utilities\Jiepei.ERP.Utilities.csproj" />
+		<ProjectReference Include="..\..\..\Jiepei.ERP.Members\src\Jiepei.ERP.Members.Application\Jiepei.ERP.Members.Application.csproj" />
+		<ProjectReference Include="..\..\..\Jiepei.ERP.Suppliers\src\Jiepei.ERP.Suppliers.Application\Jiepei.ERP.Suppliers.Application.csproj" />
+		<ProjectReference Include="..\..\..\Jiepei.ERP.Suppliers\src\Jiepei.ERP.Suppliers.Unionfab\Jiepei.ERP.Suppliers.Unionfab.csproj" />
+		<ProjectReference Include="..\Jiepei.ERP.Orders.Application.Contracts\Jiepei.ERP.Orders.Application.Contracts.csproj" />
+		<ProjectReference Include="..\Jiepei.ERP.Orders.Application.External\Jiepei.ERP.Orders.Application.External.csproj" />
+		<ProjectReference Include="..\Jiepei.ERP.Orders.Domain\Jiepei.ERP.Orders.Domain.csproj" />
+	</ItemGroup>
+
+</Project>

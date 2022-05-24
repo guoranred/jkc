@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace>Jiepei.ERP.Orders</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="CncOrders\**" />
+	  <Compile Remove="InjectionOrders\**" />
+	  <Compile Remove="MoldOrders\**" />
+	  <EmbeddedResource Remove="CncOrders\**" />
+	  <EmbeddedResource Remove="InjectionOrders\**" />
+	  <EmbeddedResource Remove="MoldOrders\**" />
+	  <None Remove="CncOrders\**" />
+	  <None Remove="InjectionOrders\**" />
+	  <None Remove="MoldOrders\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Orders\EventHandlers\PayOrderEventHandler.cs~RF1dccc5d.TMP" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="EasyAbp.Abp.DataDictionary.Domain" Version="1.0.7" />
+		<PackageReference Include="Volo.Abp.Ddd.Domain" Version="4.3.0" />
+		<PackageReference Include="Volo.Abp.EventBus" Version="4.3.0" />
+		<ProjectReference Include="..\..\..\..\shareds\Jiepei.ERP.EventBus.Shared\Jiepei.ERP.EventBus.Shared.csproj" />
+		<ProjectReference Include="..\Jiepei.ERP.Orders.Domain.Shared\Jiepei.ERP.Orders.Domain.Shared.csproj" />
+	</ItemGroup>
+
+</Project>

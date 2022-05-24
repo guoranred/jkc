@@ -1,0 +1,113 @@
+body {
+  background-color: #fff;
+}
+.order-detail-wrap .order-info-wrap {
+  border-top: 1px solid #e4e7ed;
+  border-left: 1px solid #e4e7ed;
+}
+.order-detail-wrap .layui-col-md12 {
+  border-right: 1px solid #e4e7ed;
+  border-bottom: 1px solid #e4e7ed;
+}
+.order-delivery {
+  display: flex;
+}
+.order-delivery .layui-col-md4 {
+  padding: 0 0 10px;
+  flex: 1;
+  border-right: 1px solid #e4e7ed;
+}
+.order-delivery .layui-col-md4:last-child {
+  border-right: none;
+}
+.order-delivery .order-failreason {
+  display: none;
+}
+.order-detail-title {
+  padding: 20px 0 10px;
+  font-size: 20px;
+  line-height: 27px;
+  color: #253746;
+}
+.order-subtitle {
+  font-size: 14px;
+  line-height: 40px;
+  color: #253746;
+  font-weight: bold;
+  padding: 0 20px;
+}
+.order-subinfo {
+  font-size: 14px;
+  line-height: 26px;
+  color: #253746;
+  padding: 0 20px;
+}
+.order-remark .order-subinfo {
+  line-height: 40px;
+}
+.order-price:before {
+  content: '￥';
+}
+
+.order-detail-wrap table {
+  width: 100%;
+}
+.order-detail-wrap table th, .order-detail-wrap table td {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  color: #253746;
+  padding: 10px 20px;
+}
+.order-detail-wrap table td.total-price {
+  color: #EE2737;
+}
+.order-detail-wrap table th {
+  background-color: #fafafa;
+}
+.fileinfo-wrap {
+  display: flex;
+}
+.fileinfo-wrap .filename {
+  font-size: 14px;
+  line-height: 22px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.fileinfo-wrap .fileinfo {
+  font-size: 14px;
+  line-height: 18px;
+  color: #999;
+}
+.magnifier-wrap {
+  position: relative;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.magnifier-wrap img {
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+.magnifier-wrap .magnifier {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+  line-height: 24px;
+  color: #fff;
+}
+
+.order-price-detail {
+  padding: 10px 0;
+}
+.order-price-detail .green {
+  color: #009b77;
+}
+.order-price-detail .order-price {
+  font-weight: bold;
+}

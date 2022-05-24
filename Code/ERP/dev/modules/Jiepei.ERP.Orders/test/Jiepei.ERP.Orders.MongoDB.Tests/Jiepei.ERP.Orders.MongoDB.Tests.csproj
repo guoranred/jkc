@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Jiepei.ERP.Orders</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.1" />
+    <PackageReference Include="Mongo2Go" Version="3.1.1" />
+    <ProjectReference Include="..\..\src\Jiepei.ERP.Orders.MongoDB\Jiepei.ERP.Orders.MongoDB.csproj" />
+    <ProjectReference Include="..\Jiepei.ERP.Orders.TestBase\Jiepei.ERP.Orders.TestBase.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="变色龙3D打印为您提供定制化的3D打印制造方案服务，包括树脂3D打印、尼龙3D打印、光固化3D打印等3D打印加工，帮助企业解决研发初期样件、小批量外观产品市场推广需求。">
+  <meta name="keywords" content="3D打印,3D打印服务,3D打印技术,树脂3D打印,尼龙3D打印,光固化3D打印,3D打印模型">
+  <title>上传报价_3D打印_3D打印模具_变色龙3D打印服务</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico"/>
+  <link rel="stylesheet" href="./assets/layui-v2.6.8/css/layui.css">
+  <link rel="stylesheet" href="./assets/swiper2/css/idangerous.swiper.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/valuation.css">
+</head>
+<body>
+  <!-- 公共头部 -->
+  <div id="header"></div>
+  <!-- 头部 -->
+  <div class="valuation-head">
+    <div class="w1280 valuation-type">
+      <div class="valuation-type-item tc type-3d active">
+        <img src="./images/valuation/icon-type-3d.png" alt="">
+        <span>3D打印</span>
+      </div>
+      <!-- <div class="valuation-type-item tc type-injectionmold">
+        <img src="./images/valuation/icon-type-injectionmold.png" alt="">
+        <span>模具注塑</span>
+        <span>下模具注塑订单3D免费打印</span>
+      </div> -->
+    </div>
+  </div>
+  <div class="valuation-container">
+    <div class="valuation-3d">
+      <div class="valuation-tip">
+        <p class="w1280">请您上传3D图纸，系统将自动解析文件，捷配将对您的文件绝对保密，保护您的知识产权。</p>
+      </div>
+      <div class="w1280">
+        <div class="upload-wrap-3d">
+          <div class="upload-title">* 上传3D文件</div>
+          <div class="upload-box tc" id="upload-3d">
+            <img class="icon-upload" src="./images/valuation/icon-upload.png" alt="">
+            <img class="icon-upload-active" src="./images/valuation/icon-upload2.png" alt="">
+            <div class="no-upload">请选择3D文件</div>
+            <div class="in-upload">
+              <span class="file-name-3d"></span>
+              <span class="file-upload-progress">上传中...<span class="upload-progress-num">0</span>%</span>
+              <span class="file-upload-analysis">上传完成！正在解析...<span class="analysis-progress-num">0</span>%，请稍后</span>
+            </div>
+            <div class="upload-text">
+              <p>将 STL/STP/STEP 格式文件直接 <span>拖拽上传</span> 或 <span>点击上传</span></p>
+              <p>支持多个文件同时上传，建议同时上传数量＜10个，单个文件的大小不超过64M；</p>
+              <p>特别提醒：壁厚需大于1.2mm，薄处不低于0.8mm</p>
+            </div>
+          </div>
+          <div class="upload-tip">
+            <p>特别提醒：禁止单个文件中包含多个制作文件，同时壁厚需大于1.2mm，薄壁处不低于0.8mm，如文件不符合要求，将自动判定为审核不通过； </p>
+            <p>请自行修改文件后联系客服更换或直接取消文件。</p>
+          </div>
+        </div>
+        <div class="filelist-wrap-3d">
+          <div class="filelist-title">您的文件</div>
+          <div class="filelist-3d">
+          </div>
+          <!-- <div class="filelist-title">其他产品信息</div> -->
+          <!-- <div class="other-product-info">
+            <div class="file-form layui-form" lay-filter="otherForm">
+              <div class="layui-form-item">
+                <label class="layui-form-label">
+                  <span>应用领域：</span>
+                </label>
+                <div class="layui-input-block">
+                  <input type="text" name="applicationArea" hidden>
+                  <div class="clearfix">
+                    <div class="form-check-item active">白色</div>
+                    <div class="form-check-item">半透系列</div>
+                    <div class="form-check-item">咖啡棕</div>
+                    <div class="form-check-item">尼龙系列</div>
+                    <div class="form-check-item">无色透明</div>
+                  </div>
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">
+                  <span>预计年使用量：</span>
+                </label>
+                <div class="layui-input-block">
+                  <input type="text" name="useNum" hidden>
+                  <div class="clearfix">
+                    <div class="form-check-item active">白色</div>
+                    <div class="form-check-item">半透系列</div>
+                    <div class="form-check-item">咖啡棕</div>
+                    <div class="form-check-item">尼龙系列</div>
+                    <div class="form-check-item">无色透明</div>
+                  </div>
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <label class="layui-form-label">
+                  <span>特殊备注：</span>
+                </label>
+                <div class="layui-input-block">
+                  <input type="text" maxlength="500" name="remark" placeholder="如果您还有其他特殊要求，请在此处注明以帮助我们更清楚地了解您的要求。" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="valuation-bottom">
+    <div class="w1280 clearfix">
+      <div class="fl">
+        已上传文件 <span class="file-totalnum">0</span> 个，选择材料 <span class="material-totalnum">0</span> 种
+      </div>
+      <div class="fr">
+        总计价格 <span class="money-icon">￥</span><span class="total-discount-price">0</span>
+        <!-- <span class="total-price">0</span> -->
+        <span class="layui-btn" onclick="plate3d.showAddress()">提交订单</span>
+      </div>
+    </div>
+  </div>
+  <!-- 选择喷漆弹窗 -->
+  <div class="choose-painting-container">
+    <div class="choose-painting">
+      <div class="choose-painting-head">
+        <span>选择喷漆信息</span>
+        <img class="close-choose-painting" onclick="painting.closeChoosePainting()" src="./images/icon-close.png" alt="">
+      </div>
+      <div class="choose-painting-content">
+        <div class="choose-painting-tip">声明：色版只供参考之用；颜色在不同显示器上显示亦有分别，请以pantone专色色彩配方指南为准。</div>
+        <div class="layui-form painting-form" lay-filter="painting-form">
+          <div class="layui-form-item">
+            <label class="layui-form-label tl">常用色</label>
+            <div class="layui-input-block">
+              <input type="radio" name="metalColor" value="金色" title="金色" lay-filter="painting">
+              <input type="radio" name="metalColor" value="银色" title="银色" lay-filter="painting">
+              <input type="radio" name="metalColor" value="黑色" title="黑色" lay-filter="painting">
+              <input type="radio" name="metalColor" value="白色" title="白色" lay-filter="painting">
+              <input type="radio" name="metalColor" value="灰色" title="灰色" lay-filter="painting">
+            </div>
+          </div>
+          <div class="layui-form-item choose-more">
+            <label class="layui-form-label tl">选择颜色</label>
+            <div class="layui-input-block">
+              <div class="layui-inline" style="margin-right: 0;">
+                <input type="radio" name="color1" value="哑光" title="哑光" lay-filter="painting">
+                <input type="radio" name="color1" value="高光" title="高光" lay-filter="painting" checked>
+              </div>
+              <div class="layui-inline choose-color-input">
+                <label class="layui-form-label">潘通色值</label>
+                <div class="layui-input-inline">
+                  <div class="PTColor"></div>
+                  <input type="text" class="layui-input color" autocomplete="off" name="colordata1">
+                  <span class="layui-btn color-search-btn" onclick="painting.openColor(1)">查询</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="add-more-painting">
+          <img src="./images/valuation/icon-add.png" alt="" onclick="painting.add()">
+          <span>增加一种颜色</span>
+          <span class="can-add-text">您还可以增加 <span class="can-add-num">4</span> 种颜色</span>
+        </div> -->
+        <div class="choose-painting-warn">
+          <p>注：</p>
+          <p>1.常用色为工厂默认色号，如需指定颜色直接提供色值即可。</p>
+          <p>2.目前模型仅支持单色上色，如二种以上请联系工程客服，探讨上色的可能性。</p>
+        </div>
+      </div>
+      <div class="bottom-btn">
+        <span class="layui-btn layui-btn-primary" onclick="painting.closeChoosePainting()">取消</span>
+        <span class="layui-btn" onclick="painting.confirmPainting()">确认</span>
+      </div>
+    </div>
+  </div>
+  <!-- 选择地址弹窗 -->
+  <div class="choose-address-container">
+    <div class="choose-address">
+      <div class="choose-address-head">
+        <span>选择地址</span>
+        <img class="close-choose-address" onclick="closeChooseAddress()" src="./images/icon-close.png" alt="">
+      </div>
+      <div class="choose-address-tip">亲，请选择正确的寄货地址。提交该订单，我们会第一时间安排下单出货哦！</div>
+      <div class="choose-address-content">
+        <div class="address-list" id="address-list">
+        </div>
+        <div class="open-address-list" onclick="plate3d.openAddressList()">展开全部地址</div>
+        <div class="add-address-btn">
+          <img src="./images/valuation/icon-add3.png" alt="">
+          <span>新增收货地址</span>
+        </div>
+      </div>
+      <div class="choose-address-bottom">
+        <div class="layui-btn" onclick="plate3d.createOrder()">提 交</div>
+      </div>
+    </div>
+  </div>
+  <!-- 新增地址弹窗 -->
+  <div class="add-address-dialog">
+    <div class="add-address">
+      <div class="choose-address-head">
+        <span>新增地址</span>
+        <img class="close-choose-address" onclick="closeAddAddress()" src="./images/icon-close.png" alt="">
+      </div>
+      <div class="add-address-content">
+        <form class="layui-form" action="" lay-filter="addressForm">
+          <div class="layui-form-item">
+            <label class="layui-form-label layui-required">所在地区</label>
+            <div class="layui-input-block w600">
+              <input type="text" name="id" hidden>
+              <div class="layui-inline province">
+                <select name="province" lay-verify="province" lay-filter="province" class="addressProvince">
+                  <option value="-">--省--</option>
+                </select>
+              </div>
+              <div class="layui-inline city">
+                <select name="city" lay-verify="city" lay-filter="city" class="addressCity">
+                  <option value="-">--市--</option>
+                </select>
+              </div>
+              <div class="layui-inline area">
+                <select name="area" lay-verify="area" class="addressArea">
+                  <option value="-">--区--</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label layui-required">详细地址</label>
+            <div class="layui-input-block w600">
+              <textarea name="detailAddress" lay-verify="detailAddress" placeholder="无需重复填写市区，小于75个字" class="layui-textarea" maxlength="75" style="resize: none;"></textarea>
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label layui-required">收货人姓名</label>
+            <div class="layui-input-block w600">
+              <input type="text" name="receiveName" lay-verify="receiveName" placeholder="不能为昵称、X先生、X小姐等，请使用真实姓名" autocomplete="off" class="layui-input">
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label layui-required">手机号码</label>
+            <div class="layui-input-block w600">
+              <input type="text" name="phone" lay-verify="customPhone" autocomplete="off" class="layui-input" maxlength="11">
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label">默认地址</label>
+            <div class="layui-input-block w600">
+              <input type="checkbox" name="isDefault" checked lay-skin="switch">
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <div class="layui-input-block w600">
+              <a href="javascript:;" class="layui-btn layui-btn-sm add-address-submit" lay-submit lay-filter="personalAddressForm">保存</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- 创建成功弹窗 -->
+  <div class="order-success-dialog">
+    <div class="order-success-wrap">
+      <div class="order-success-head">
+        <span>订单提交结果</span>
+        <img class="close-order-success" onclick="closeSuccess()" src="./images/icon-close2.png" alt="">
+      </div>
+      <div class="order-success-content">
+        <img class="icon-success" src="./images/icon-success.png" alt="">
+        <h5 class="success-title">恭喜，您的订单已经提交成功！</h5>
+        <p class="success-tip">您还可以联系您的助理工程师，获取报价信息</p>
+        <img class="qrcode-img" src="./images/qrcode-3d.jpg" alt="">
+        <p class="code-tip">微信扫一扫 立即联系</p>
+        <p class="code-info"><span class="name">吊兰</span> <span class="phone">133 9650 0774</span></p>
+        <a href="javascript:;" class="layui-btn qq-service">QQ在线客服</a>
+        <div style="padding-top: 15px;">
+          <a href="./valuation.html" class="layui-btn qq-service">继续下单</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 公共底部 -->
+  <div id="footer"></div>
+  <script src="./js/jquery-3.6.0.js"></script>
+  <script src="./assets/layui-v2.6.8/layui.js"></script>
+  <script src="./js/plupload.full.min.js"></script>
+  <script src="./js/spark-md5.min.js"></script>
+  <script>
+		var now = 20210806;
+		document.write('<script src="./js/ajax.js?v=' + now + '"><\/script\>');
+		document.write('<script src="./js/util.js?v=' + now + '"><\/script\>');
+		document.write('<script src="./js/const.js?v=' + now + '"><\/script\>');
+    // 公共头和底加载
+		document.write('<script src="./js/loadCommonHtml.js?v=' + now + '"><\/script\>');
+		document.write('<script src="./js/valuation.js?v=' + now + '"><\/script\>');
+	</script>
+</body>
+</html>

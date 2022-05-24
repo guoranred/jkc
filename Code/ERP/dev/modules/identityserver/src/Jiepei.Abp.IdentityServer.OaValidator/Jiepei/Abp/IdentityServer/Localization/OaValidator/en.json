@@ -1,0 +1,8 @@
+﻿{
+  "culture": "en",
+  "texts": {
+    "InvalidGrant:GrantTypeInvalid": "Type of authorization not allowed!",
+    "InvalidGrant:IvOrTokenNotFound": "iv or token not found!",
+    "InvalidGrant:UserNotRegister": "The registered user is not registered!"
+  }
+}

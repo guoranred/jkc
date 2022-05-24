@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jiepei.ERP.EventBus.Shared</name>
+    </assembly>
+    <members>
+        <member name="T:Jiepei.ERP.EventBus.Shared.Molds.CancelMoldEto">
+            <summary>
+            模具订单取消 事件总线ETO
+            </summary>
+        </member>
+        <member name="M:Jiepei.ERP.EventBus.Shared.Molds.CancelMoldEto.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Jiepei.ERP.EventBus.Shared.Molds.CancelMoldEto.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="orderNo">订单号</param>
+        </member>
+        <member name="T:Jiepei.ERP.EventBus.Shared.Molds.CheckMoldEto">
+            <summary>
+            模具订单审核 事件总线ETO
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.EventBus.Shared.Molds.CheckMoldEto.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.EventBus.Shared.Molds.CheckMoldEto.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="M:Jiepei.ERP.EventBus.Shared.Molds.CheckMoldEto.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Jiepei.ERP.EventBus.Shared.Molds.CheckMoldEto.#ctor(System.String,Jiepei.ERP.Molds.EnumMoldOrderStatus,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="orderNo"></param>
+            <param name="status">状态</param>
+            <param name="remark"></param>
+        </member>
+        <member name="T:Jiepei.ERP.EventBus.Shared.Molds.CompleteMoldEto">
+            <summary>
+            模具订单完成 事件总线ETO
+            </summary>
+        </member>
+        <member name="M:Jiepei.ERP.EventBus.Shared.Molds.CompleteMoldEto.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Jiepei.ERP.EventBus.Shared.Molds.CompleteMoldEto.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="orderNo"></param>
+        </member>
+        <member name="T:Jiepei.ERP.EventBus.Shared.Molds.DeliverMoldEto">
+            <summary>
+            模具订单发货 事件总线ETO
+            </summary>
+        </member>
+        <member name="M:Jiepei.ERP.EventBus.Shared.Molds.DeliverMoldEto.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Jiepei.ERP.EventBus.Shared.Molds.DeliverMoldEto.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="orderNo"></param>
+        </member>
+        <member name="T:Jiepei.ERP.EventBus.Shared.Molds.ManufactureMoldEto">
+            <summary>
+            模具订单投产 事件总线ETO
+            </summary>
+        </member>
+        <member name="M:Jiepei.ERP.EventBus.Shared.Molds.ManufactureMoldEto.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Jiepei.ERP.EventBus.Shared.Molds.ManufactureMoldEto.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="orderNo"></param>
+        </member>
+        <member name="T:Jiepei.ERP.EventBus.Shared.Molds.OfferMoldEto">
+            <summary>
+            模具订单报价 事件总线ETO
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.EventBus.Shared.Molds.OfferMoldEto.SellingMoney">
+            <summary>
+            对外报价
+            </summary>
+        </member>
+        <member name="M:Jiepei.ERP.EventBus.Shared.Molds.OfferMoldEto.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Jiepei.ERP.EventBus.Shared.Molds.OfferMoldEto.#ctor(System.String,System.Decimal)">
+            <summary>
+            
+            </summary>
+            <param name="orderNo">订单号</param>
+            <param name="sellingMoney">对外报价</param>
+        </member>
+        <member name="T:Jiepei.ERP.EventBus.Shared.OrderEventBaseDto">
+            <summary>
+            订单基类 事件总线ETO
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.EventBus.Shared.OrderEventBaseDto.OrderNo">
+            <summary>
+            订单编号
+            </summary>
+        </member>
+    </members>
+</doc>

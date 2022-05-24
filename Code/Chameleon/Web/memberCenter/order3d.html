@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="变色龙3D打印为您提供定制化的3D打印制造方案服务，包括树脂3D打印、尼龙3D打印、光固化3D打印等3D打印加工，帮助企业解决研发初期样件、小批量外观产品市场推广需求。">
+  <meta name="keywords" content="3D打印,3D打印服务,3D打印技术,树脂3D打印,尼龙3D打印,光固化3D打印,3D打印模型">
+  <title>会员中心_3D订单_3D打印_3D打印模具_变色龙3D打印服务</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
+  <link rel="stylesheet" href="../assets/layui-v2.6.8/css/layui.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/memberCenter/layout.css">
+  <link rel="stylesheet" href="../css/memberCenter/memberHeader.css">
+  <link rel="stylesheet" href="../css/memberCenter/memberSideBar.css">
+  <link rel="stylesheet" href="../css/memberCenter/memberFooter.css">
+  <link rel="stylesheet" href="../css/memberCenter/order3d.css">
+</head>
+<body>
+  <!-- 会员公共头 -->
+  <div id="memberHeader"></div>
+  <div class="membercontent-box">
+    <!-- 会员导航 -->
+    <div id="memberSideBar"></div>
+    <div class="membercontent-wrap">
+      <div class="membercontent">
+        <!-- <div class="common-tip">
+          <img src="../images/memberCenter/icon-tip.png" alt="">
+          <span>变色龙邀请您参加订单流程改进计划，<a href="javascript:;">查看详情</a></span>
+        </div> -->
+        <div class="layui-row order-head">
+          <div class="layui-col-md6 order-head-left">3D订单</div>
+          <div class="layui-col-md6 tr order-head-right">
+            <!-- <span>手机查订单，省时又省力</span>
+            <button class="layui-btn layui-btn-sm scancode-small">扫码关注小程序</button>
+            <div class="qrcode">
+              <img src="../images/gongzhonghao.jpg" alt="">
+            </div> -->
+          </div>
+          <div class="layui-col-md4 tc">
+            总订单数：<span class="totalOrders">0</span>
+          </div>
+          <div class="layui-col-md4 tc">
+            待我处理：<span class="waitHandle">0</span>
+          </div>
+          <div class="layui-col-md4 tc">
+            处理中：<span class="inProcess">0</span>
+          </div>
+        </div>
+        <div class="memberoder-wrap">
+          <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+            <ul class="layui-tab-title">
+              <li class="layui-this">全部订单</li>
+              <li>待审核</li>
+              <li>审核不通过</li>
+              <li>待付款</li>
+              <li>生产中</li>
+              <li>待收货</li>
+              <li>已签收</li>
+              <li>已取消</li>
+            </ul>
+          </div>
+          <!-- 查询 -->
+          <form class="layui-form order-search" action="" lay-filter="searchForm">
+            <div class="layui-form-item">
+              <div class="layui-inline" style="width: 220px;">
+                <input type="text" name="search" placeholder="订单编号/订单包号" autocomplete="off" class="layui-input">
+              </div>
+              <div class="layui-inline order-status" style="width: 140px;">
+                <select name="status" lay-verify="" class="orderStatus">
+                </select>
+              </div>
+              <div class="layui-inline" style="width: 220px;">
+                <input type="text" name="createTime" class="layui-input" id="createTime" placeholder="下单时间">
+              </div>
+              <div class="layui-inline">
+                <button class="layui-btn layui-btn-primary layui-border-green" lay-submit lay-filter="formDemo">查询</button>
+                <!-- <button type="reset" class="layui-btn layui-btn-primary">重置</button> -->
+              </div>
+            </div>
+          </form>
+          <!-- 订单列表 -->
+          <div class="memberoderlist-wrap">
+            <input type="text" id="upload-file-order" hidden>
+            <table class="memberoder">
+              <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col style="width: 116px;">
+                <col style="width: 146px;">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>缩略图</th>
+                  <th>零件信息</th>
+                  <th>材料</th>
+                  <th style="text-align: center;">后处理</th>
+                  <th style="text-align: center;">数量</th>
+                  <th style="text-align: center;">总交期</th>
+                  <th style="text-align: center;">总报价</th>
+                  <th style="text-align: center;">交易状态</th>
+                  <th style="text-align: center;">操作</th>
+                </tr> 
+              </thead>
+              <tbody id="memberorder-list">
+                <!-- 子订单 -->
+                <!-- <tr class="memberorder-suborder">
+                  <td>
+                    <div class="memberorder-img" data-src="../images/gongzhonghao.jpg">
+                      <img src="../images/gongzhonghao.jpg" alt="">
+                      <div class="magnifier"><i class="layui-icon layui-icon-search"></i></div>
+                    </div>
+                  </td>
+                  <td>
+                    <h5 class="part-name">外壳.stp</h5>
+                    <p class="part-size">尺寸：143.2 * 143.2 * 33.8 mm</p>
+                    <p class="part-size">体积：247504.04 mm³</p>
+                  </td>
+                  <td>
+                    <p>光敏树脂 进口</p>
+                    <p>JP2300</p>
+                  </td>
+                  <td align="center">原色</td>
+                  <td align="center">1个</td>
+                  <td align="center">
+                    <p>单价：9.00</p>
+                    <p>总价：<span class="order-total-pay">1740.00</span></p>
+                    <p>1个工作日</p>
+                  </td>
+                  <td>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="memberorder-img" data-src="../images/gongzhonghao.jpg">
+                      <img src="../images/gongzhonghao.jpg" alt="">
+                      <div class="magnifier"><i class="layui-icon layui-icon-search"></i></div>
+                    </div>
+                  </td>
+                  <td>
+                    <h5 class="part-name">外壳.stp</h5>
+                    <p class="part-size">尺寸：143.2 * 143.2 * 33.8 mm</p>
+                    <p class="part-size">体积：247504.04 mm³</p>
+                  </td>
+                  <td>
+                    <p>光敏树脂 进口</p>
+                    <p>JP2300</p>
+                  </td>
+                  <td align="center">原色</td>
+                  <td align="center">1个</td>
+                  <td align="center">
+                    <p>单价：9.00</p>
+                    <p>总价：<span class="order-total-pay">1740.00</span></p>
+                    <p>1个工作日</p>
+                  </td>
+                  <td>
+                  </td>
+                  <td>
+                  </td>
+                </tr> -->
+              </tbody>
+            </table>
+            <div class="member-empty">当前暂无需要处理的订单</div>
+            <div id="orderpage" class="tr"></div>
+          </div>
+        </div>
+      </div>
+      <!-- 会员公共底 -->
+      <div id="memberFooter"></div>
+    </div>
+  </div>
+
+<script src="../js/jquery-3.6.0.js"></script>
+<script src="../assets/layui-v2.6.8/layui.js"></script>
+<script src="../js/plupload.full.min.js"></script>
+<script>
+  var now = 20210806;
+  document.write('<script src="../js/ajax.js?v=' + now + '"><\/script\>');
+  document.write('<script src="../js/util.js?v=' + now + '"><\/script\>');
+  document.write('<script src="../js/const.js?v=' + now + '"><\/script\>');
+  // 公共头和底加载
+  document.write('<script src="../js/memberCenter/loadHtml.js?v=' + now + '"><\/script\>');
+  document.write('<script src="../js/memberCenter/order3d.js?v=' + now + '"><\/script\>');
+</script>
+</body>
+</html>

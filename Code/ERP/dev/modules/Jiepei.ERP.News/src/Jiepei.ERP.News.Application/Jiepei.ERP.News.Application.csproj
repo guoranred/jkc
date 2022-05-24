@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Jiepei.ERP.News</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>obj\Debug\net5.0\Jiepei.ERP.News.Application.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ColumnTypes\**" />
+    <EmbeddedResource Remove="ColumnTypes\**" />
+    <None Remove="ColumnTypes\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="4.3.3" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="4.3.3" />
+    <ProjectReference Include="..\Jiepei.ERP.News.Application.Contracts\Jiepei.ERP.News.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Jiepei.ERP.News.Domain\Jiepei.ERP.News.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

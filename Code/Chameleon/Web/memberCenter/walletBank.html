@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>银行账户</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
+  <link rel="stylesheet" href="../assets/layui-v2.6.8/css/layui.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/memberCenter/layout.css">
+  <link rel="stylesheet" href="../css/memberCenter/memberHeader.css">
+  <link rel="stylesheet" href="../css/memberCenter/memberSideBar.css">
+  <link rel="stylesheet" href="../css/memberCenter/memberFooter.css">
+  <link rel="stylesheet" href="../css/memberCenter/walletBank.css">
+</head>
+<body>
+  <!-- 会员公共头 -->
+  <div id="memberHeader"></div>
+  <div class="membercontent-box">
+    <!-- 会员导航 -->
+    <div id="memberSideBar"></div>
+    <div class="membercontent-wrap">
+      <div class="membercontent">
+        <div class="member-surplus">
+          <p>账户余额（元）：<span class="member-surplus-num">22331.00</span></p>
+          <button class="btn">充值</button>
+          <button class="btn btn-grey">提现</button>
+        </div>
+        <div class="memberbank-maintitle">我的银行卡</div>
+        <div class="memberbank">
+          <h5 class="memberbank-tip">已添加<span class="credit-card-num">2</span>张信用卡，<span class="deposit-card-num">0</span>张储蓄卡</h5>
+          <div class="memberbank-list clearfix">
+            <div class="memberbank-item-box">
+              <div class="memberbank-item">
+                <div class="memberbank-item-head layui-row">
+                  <div class="layui-col-md6">
+                    <img src="../images/memberCenter/icon-bank.png" alt="">
+                  </div>
+                  <div class="layui-col-md6 card-lastno tr">
+                    <span>尾号 8888</span>
+                    <span class="card-type card-type-deposit">储蓄卡</span>
+                  </div>
+                </div>
+                <div class="memberbank-item-content">
+                  <div class="layui-row">
+                    <div class="layui-col-md8">持卡人姓名：*晓丽</div>
+                    <div class="layui-col-md4 tr">
+                      <a href="javascript:;">修改</a>
+                    </div>
+                    <div class="layui-col-md8">手机号：186 **** 1193</div>
+                    <div class="layui-col-md4 tr">
+                      <a href="javascript:;">删除</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="memberbank-item-box">
+              <div class="memberbank-item">
+                <div class="memberbank-item-head layui-row">
+                  <div class="layui-col-md6">
+                    <img src="../images/memberCenter/icon-bank.png" alt="">
+                  </div>
+                  <div class="layui-col-md6 card-lastno tr">
+                    <span>尾号 8888</span>
+                    <span class="card-type card-type-credit">信用卡</span>
+                  </div>
+                </div>
+                <div class="memberbank-item-content">
+                  <div class="layui-row">
+                    <div class="layui-col-md8">持卡人姓名：*晓丽</div>
+                    <div class="layui-col-md4 tr">
+                      <a href="javascript:;">修改</a>
+                    </div>
+                    <div class="layui-col-md8">手机号：186 **** 1193</div>
+                    <div class="layui-col-md4 tr">
+                      <a href="javascript:;">删除</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="memberbank-item-box">
+              <div class="memberbank-item add-bankcard tc">
+                <img src="../images/memberCenter/icon-add.png" alt="">
+                <p>添加银行卡</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 会员公共底 -->
+      <div id="memberFooter"></div>
+    </div>
+  </div>
+
+  <script src="../js/jquery-3.6.0.js"></script>
+  <script src="../assets/layui-v2.6.8/layui.js"></script>
+  <!-- 公共头和底加载 -->
+  <script src="../js/memberCenter/loadHtml.js"></script>
+</body>
+</html>

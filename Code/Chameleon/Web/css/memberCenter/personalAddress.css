@@ -1,0 +1,130 @@
+.address-maintitle {
+  font-size: 20px;
+  line-height: 28px;
+  color: #253746;
+  margin-bottom: 18px;
+}
+.address-list-wrap {
+  background-color: #ffffff;
+  padding: 17px 20px 19px;
+}
+.address-list-wrap .list-title {
+  font-size: 18px;
+  line-height: 22px;
+  color: #009B77;
+  margin-bottom: 14px;
+}
+.address-list-wrap .list-title .add-btn {
+  background-color: #009B77;
+}
+.address td {
+  padding: 27px 20px;
+}
+.address tr:last-child td {
+  border-bottom: none;
+}
+.address .address-btn {
+  color: #009B77;
+}
+.address .btn-divide {
+  margin: 0 10px;
+  color: #009B77;
+  position: relative;
+  top: -1px;
+}
+.address .address-default-tag {
+  color: #009B77;
+  padding: 2px 12px 2px;
+  border: 1px solid #009B77;
+  border-radius: 25px;
+}
+
+.address-edit-box {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  background-color: rgba(0,0,0,0.5);
+}
+.address-edit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 750px;
+  height: 460px;
+  background-color: #ffffff;
+  padding: 0 0 20px;
+}
+.address-edit .address-edit-title {
+  font-size: 18px;
+  line-height: 48px;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 1px solid #DBDBDB;
+}
+.address-edit .address-edit-title .close-edit-address {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  cursor: pointer;
+}
+.address-edit .layui-form-label {
+  width: 110px;
+}
+.address-edit .w600 {
+  width: 600px;
+}
+.address-edit .province {
+  width: 192px;
+  margin-bottom: 0;
+}
+.address-edit .city {
+  width: 190px;
+  margin-bottom: 0;
+}
+.address-edit .area {
+  width: 190px;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.address-edit .area-code {
+  width: 150px;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.address-edit .tele-phone {
+  width: 214px;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.address-edit .ext-number {
+  width: 203px;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.address-edit .horizon-line {
+  margin: 0 2px;
+}
+.address-edit .layui-textarea {
+  resize: none;
+}
+.address-edit .submit-btn {
+  width: 80px;
+  background-color: #009B77;
+}
+
+.address-page {
+  padding: 0 20px;
+  background-color: #ffffff;
+}
+#addresspage {
+  padding-top: 5px;
+  border-top: 1px solid #E4E7ED;
+}

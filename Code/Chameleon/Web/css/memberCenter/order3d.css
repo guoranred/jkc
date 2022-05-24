@@ -1,0 +1,63 @@
+.membercontent .common-tip {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+.order-head {
+  margin-bottom: 10px;
+}
+.order-head .order-head-left {
+  font-size: 20px;
+  line-height: 30px;
+  color: #253746;
+}
+.order-head .order-head-right {
+  height: 30px;
+  position: relative;
+  z-index: 1;
+}
+.order-head .order-head-right span {
+  font-size: 14px;
+  margin-right: 17px;
+}
+.order-head .order-head-right .scancode-small {
+  background-color: #009B77;
+}
+.order-head .order-head-right .qrcode {
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  box-shadow: 0 1px 10px #999999;
+  background-color: #f7f7f7;
+  display: none;
+}
+.order-head .order-head-right .qrcode img {
+  width: 80px;
+  height: 80px;
+}
+.order-head .layui-col-md6 {
+  margin-bottom: 8px;
+}
+.order-head .layui-col-md4 {
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 80px;
+  color: #253746;
+  border-right: 1px solid #E5E5E5;
+}
+.order-head .layui-col-md4:last-child {
+  border-right: none;
+}
+.order-head .layui-col-md4 span {
+  font-size: 24px;
+  color: #009B77;
+}
+.memberoderlist-wrap {
+  padding: 0 20px;
+}
+#orderpage {
+  padding: 10px 0 18px;
+}

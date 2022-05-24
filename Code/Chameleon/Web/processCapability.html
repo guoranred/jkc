@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>工艺能力</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico"/>
+  <link rel="stylesheet" href="./assets/layui-v2.6.8/css/layui.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/processCapability.css">
+</head>
+<body>
+  <!-- 公共头部 -->
+  <div id="header"></div>
+  <div class="process-capability">
+    <div class="w1280">
+      <div class="main-title tc"><span>变色龙</span>精密智造加工能力</div>
+      <div class="main-subtitle tc">以“让产业更高效，让生活更美好”为企业使命</div>
+      <div class="capability">
+        <div class="sheet-metal">
+          <div class="title layui-row">
+            <div class="layui-col-md6">钣金加工能力表</div>
+            <div class="layui-col-md6 tr">
+            </div>
+          </div>
+          <table class="process-table" border="1" bordercolor="#E6E7EB" width="100%" cellspacing="0">
+            <colgroup>
+              <col class="td1"></col>
+              <col class="td2"></col>
+              <col class="td3"></col>
+            </colgroup>
+            <tbody>
+              <tr>
+                <td class="label tc" rowspan="7">激光切割</td>
+                <td class="item-cell" rowspan="5">最大切割厚度</td>
+                <td class="item-cell">碳钢20mm</td>
+              </tr>
+              <tr>
+                <td class="item-cell">铝12mm</td>
+              </tr>
+              <tr>
+                <td class="item-cell">不锈钢12mm</td>
+              </tr>
+              <tr>
+                <td class="item-cell">黄铜6mm</td>
+              </tr>
+              <tr>
+                <td class="item-cell">紫铜6mm</td>
+              </tr>
+              <tr>
+                <td class="item-cell">双向重复定位精度</td>
+                <td class="item-cell">0.05mm</td>
+              </tr>
+              <tr>
+                <td class="item-cell">最大切割尺寸</td>
+                <td class="item-cell">3000*1500mm</td>
+              </tr>
+              <tr>
+                <td class="label tc" rowspan="3">折弯</td>
+                <td class="item-cell">最小直边高度</td>
+                <td class="item-cell">h>2t</td>
+              </tr>
+              <tr>
+                <td class="item-cell">定位精度</td>
+                <td class="item-cell">0.01mm</td>
+              </tr>
+              <tr>
+                <td class="item-cell">最大折弯长度</td>
+                <td class="item-cell">3100mm</td>
+              </tr>
+              <tr>
+                <td class="label tc" rowspan="3">钳工</td>
+                <td class="item-cell">压铆</td>
+                <td class="item-cell">M2-M10</td>
+              </tr>
+              <tr>
+                <td class="item-cell">沉孔</td>
+                <td class="item-cell">M3-M16</td>
+              </tr>
+              <tr>
+                <td class="item-cell">攻丝</td>
+                <td class="item-cell">M3-M16</td>
+              </tr>
+              <tr>
+                <td class="label tc">焊接</td>
+                <td class="item-cell">可焊接材料</td>
+                <td class="item-cell">不锈钢、铝材、铜材</td>
+              </tr>
+              <tr>
+                <td class="label tc">后处理</td>
+                <td class="item-cell" colspan="2">喷塑，电镀，氧化喷漆等</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="cnc">
+          <div class="title layui-row">
+            <div class="layui-col-md6">CNC加工能力表</div>
+            <div class="layui-col-md6 tr">
+            </div>
+          </div>
+          <table class="process-table" border="1" bordercolor="#E6E7EB" width="100%" cellspacing="0">
+            <colgroup>
+              <col class="td1"></col>
+              <col class="td2"></col>
+            </colgroup>
+            <tbody>
+              <tr>
+                <td class="label tc">主要机加</td>
+                <td class="item-cell">立式加工，卧式加工，龙门加工，镗床加工，车削</td>
+              </tr>
+              <tr>
+                <td class="label tc">配套机加</td>
+                <td class="item-cell">电火花加工，线切割，慢走丝，焊接加工（可提供焊接以后加工）</td>
+              </tr>
+              <tr>
+                <td class="label tc">手工后处理</td>
+                <td class="item-cell">拉丝，倒角，抛光，打磨</td>
+              </tr>
+              <tr>
+                <td class="label tc">外观后处理</td>
+                <td class="item-cell">阳极氧化，电镀，发黑，烤漆，激光打标，热处理，调质等</td>
+              </tr>
+              <tr>
+                <td class="label tc">其他服务</td>
+                <td class="item-cell">翻砂，铸铝，下料，工业设计，技术交流等</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 公共底部 -->
+  <div id="footer"></div>
+  <script src="./js/jquery-3.6.0.js"></script>
+  <script src="./assets/layui-v2.6.8/layui.js"></script>
+  <script>
+		var now = 20210806;
+		document.write('<script src="./js/ajax.js?v=' + now + '"><\/script\>');
+		document.write('<script src="./js/util.js?v=' + now + '"><\/script\>');
+    // 公共头和底加载
+		document.write('<script src="./js/loadCommonHtml.js?v=' + now + '"><\/script\>');
+	</script>
+</body>
+</html>

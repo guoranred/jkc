@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace>Jiepei.ERP.Members</RootNamespace>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="JiePei.Abp.Sms.YiMei" Version="0.1.6" />
+		<PackageReference Include="Jiepei.Module.SMS.Standard" Version="0.1.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.11.1" />
+		<PackageReference Include="Volo.Abp.AutoMapper" Version="4.3.3" />
+		<PackageReference Include="Volo.Abp.Caching" Version="4.3.3" />
+		<PackageReference Include="Volo.Abp.Ddd.Application" Version="4.3.3" />
+		<PackageReference Include="Volo.Abp.Sms" Version="4.3.3" />
+		<ProjectReference Include="..\..\..\Jiepei.ERP.Orders\src\Jiepei.ERP.Orders.Application.Contracts\Jiepei.ERP.Orders.Application.Contracts.csproj" />
+		<ProjectReference Include="..\Jiepei.ERP.Members.Application.Contracts\Jiepei.ERP.Members.Application.Contracts.csproj" />
+		<ProjectReference Include="..\Jiepei.ERP.Members.Domain\Jiepei.ERP.Members.Domain.csproj" />
+	</ItemGroup>
+
+</Project>

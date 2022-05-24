@@ -1,0 +1,49 @@
+.membersidebar-wrap {
+  padding: 10px 0;
+}
+.membersidebar-wrap li {
+  font-size: 14px;
+  line-height: 40px;
+}
+.membersidebar-wrap li a {
+  color: #333;
+  display: flex;
+  padding: 0 20px;
+  position: relative;
+  align-items: center;
+}
+.membersidebar-wrap li a:hover {
+  background-color: #E5F5F1;
+}
+.membersidebar-wrap li a.active {
+  background-color: #E5F5F1;
+}
+.membersidebar-wrap li a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #009B77;
+}
+.membersidebar-wrap dd a {
+  padding-left: 46px;
+}
+.membersidebar-wrap .left-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.membersidebar-wrap .right-icon {
+  font-size: 12px;
+}
+.membersidebar-wrap .sidebar-text {
+  flex: 1;
+}
+.membersidebar-wrap .sidebar-group i {
+  color: #8A8F9C;
+}

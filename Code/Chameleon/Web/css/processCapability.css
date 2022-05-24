@@ -1,0 +1,59 @@
+.process-capability {
+  padding-top: 76px;
+  padding-bottom: 50px;
+  background: #FBFBFB url('../images/process-bg.png') no-repeat center top;
+}
+.process-capability .main-title {
+  font-size: 72px;
+  line-height: 95px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.process-capability .main-title span {
+  color: #009B77;
+}
+.process-capability .main-subtitle {
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff;
+  margin-bottom: 80px;
+}
+.capability {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 40px 40px 50px;
+}
+.capability .sheet-metal {
+  margin-bottom: 22px;
+}
+.capability .title {
+  height: 50px;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  background-color: #333;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+}
+.capability .title img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: -1px;
+}
+.capability .item-cell {
+  font-size: 14px;
+  line-height: 48px;
+  padding-left: 20px;
+  color: #333;
+}
+.capability .label {
+  background-color: #FAFAFA;
+}
+.process-table .td1 {
+  width: 199px;
+}
+.sheet-metal .td2 {
+  width: 238px;
+}

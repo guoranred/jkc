@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="变色龙3D打印为您提供定制化的3D打印制造方案服务，包括树脂3D打印、尼龙3D打印、光固化3D打印等3D打印加工，帮助企业解决研发初期样件、小批量外观产品市场推广需求。">
+  <meta name="keywords" content="3D打印,3D打印服务,3D打印技术,树脂3D打印,尼龙3D打印,光固化3D打印,3D打印模型">
+  <title>会员中心首页_3D打印_3D打印模具_变色龙3D打印服务</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
+  <link rel="stylesheet" href="../assets/layui-v2.6.8/css/layui.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/memberCenter/layout.css">
+  <link rel="stylesheet" href="../css/memberCenter/memberHeader.css">
+  <link rel="stylesheet" href="../css/memberCenter/memberSideBar.css">
+  <link rel="stylesheet" href="../css/memberCenter/memberFooter.css">
+  <link rel="stylesheet" href="../css/memberCenter/index.css">
+</head>
+<body>
+  <!-- 会员公共头 -->
+  <div id="memberHeader"></div>
+  <div class="membercontent-box">
+    <!-- 会员导航 -->
+    <div id="memberSideBar"></div>
+    <div class="membercontent-wrap">
+      <div class="membercontent">
+        <!-- <div class="common-tip">
+          <img src="../images/memberCenter/icon-tip.png" alt="">
+          <span>为了不影响您的使用，请完成账户实名认证。</span>
+        </div> -->
+        <div class="membercontent-wrapper">
+          <div class="membercontent-left">
+            <div class="memberinfo-wrap">
+              <div class="memberinfo">
+                <div class="memberinfo-head">
+                  <img id="memberProfilePhotoUrl" src="../images/logo.png" alt="">
+                  <div>
+                    <div class="member-name">
+                      <span class="member-name-text"></span>
+                      <!-- <span class="member-level">V0</span> -->
+                    </div>
+                    <!-- <div class="member-security">
+                      <div>账户安全：</div>
+                      <div class="security-process"><div class="security-level-process"></div></div>
+                      <div class="security-level">中</div>
+                      <a href="javascript:;">立即提升</a>
+                    </div> -->
+                    <a href="../memberCenter/personalAddress.html" class="member-address">我的收货地址 ></a>
+                  </div>
+                </div>
+                <!-- <div class="memberinfo-foot">
+                  <div class="identity-percent">
+                    <span>身份信息完整度20%</span>
+                    <a href="javascript:;">完善信息</a>
+                  </div>
+                  <div class="tag">企业认证 免费拿样</div>
+                  <div class="memberinfo-discount">
+                    <div class="discount-item">
+                      <img src="" alt="">
+                      <p>免息赊额度</p>
+                    </div>
+                    <div class="discount-item">
+                      <img src="" alt="">
+                      <p>无门槛红包</p>
+                    </div>
+                    <div class="discount-item">
+                      <img src="" alt="">
+                      <p>无门槛红包</p>
+                    </div>
+                    <div class="discount-item">
+                      <img src="" alt="">
+                      <p>专属材料券</p>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+              <div class="member-orderinfo layui-row">
+                <div class="layui-col-md3">
+                  <h5 class="totalOrders">0</h5>
+                  <p>总订单数</p>
+                </div>
+                <div class="layui-col-md3">
+                  <h5 class="waitHandle">0</h5>
+                  <p>待我处理</p>
+                </div>
+                <div class="layui-col-md3">
+                  <h5 class="inProcess">0</h5>
+                  <p>处理中</p>
+                </div>
+              </div>
+            </div>
+            <div class="memberoder-wrap">
+              <input type="text" id="upload-file-order" hidden>
+              <!-- 订单列表 -->
+              <table class="memberoder">
+                <colgroup>
+                  <col>
+                  <col>
+                  <col>
+                  <col>
+                  <col>
+                  <col>
+                  <col style="width: 116px;">
+                  <col style="width: 146px;">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>缩略图</th>
+                    <th>零件信息</th>
+                    <th>材料</th>
+                    <th style="text-align: center;">后处理</th>
+                    <th style="text-align: center;">数量</th>
+                    <th style="text-align: center;">总交期</th>
+                    <th style="text-align: center;">总报价</th>
+                    <th style="text-align: center;">交易状态</th>
+                    <th style="text-align: center;">操作</th>
+                  </tr> 
+                </thead>
+                <tbody id="memberorder-list">
+                </tbody>
+              </table>
+              <div class="member-empty">当前暂无需要处理的订单</div>
+            </div>
+          </div>
+          <!-- <div class="membercontent-right">
+            <ul class="official-notice">
+              <div class="official-notice-title">官方公告</div>
+              <li>
+                <a href="javascript:;">
+                  <p class="title"><span class="tag">[最新]</span>行业涨价风暴，捷配挺“省”而出！</p>
+                  <span class="time">2020-12-08 19:14</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <p class="title"><span class="tag">[活动]</span>配新版计价页面上线通知</p>
+                  <span class="time">2020-12-08 19:14</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <p class="title">捷配双面板打样FR4板材升级：原Tg140板材升级至Tg150板材！</p>
+                  <span class="time">2020-12-08 19:14</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <p class="title">捷配网关于订单消息推送方式更改的重要通知</p>
+                  <span class="time">2020-12-08 19:14</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <p class="title">公司收款开票账户调整告知函</p>
+                  <span class="time">2020-12-08 19:14</span>
+                </a>
+              </li>
+            </ul>
+            <div class="course-tip">
+              <img src="../images/memberCenter/icon-video.png" alt="">
+              <div>
+                <h5>视频教程</h5>
+                <p>视频引导，快速下单</p>
+              </div>
+            </div>
+            <div class="course-tip">
+              <img src="../images/gongzhonghao.jpg" alt="">
+              <div>
+                <h5>扫码关注公众号</h5>
+                <p>接收提醒更便捷</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <!-- 会员公共底 -->
+      <div id="memberFooter"></div>
+    </div>
+  </div>
+
+  <script src="../js/jquery-3.6.0.js"></script>
+  <script src="../assets/layui-v2.6.8/layui.js"></script>
+  <script src="../js/plupload.full.min.js"></script>
+  <script>
+		var now = 20210806;
+		document.write('<script src="../js/ajax.js?v=' + now + '"><\/script\>');
+		document.write('<script src="../js/util.js?v=' + now + '"><\/script\>');
+		document.write('<script src="../js/const.js?v=' + now + '"><\/script\>');
+    // 公共头和底加载
+		document.write('<script src="../js/memberCenter/loadHtml.js?v=' + now + '"><\/script\>');
+		document.write('<script src="../js/memberCenter/index.js?v=' + now + '"><\/script\>');
+	</script>
+</body>
+</html>

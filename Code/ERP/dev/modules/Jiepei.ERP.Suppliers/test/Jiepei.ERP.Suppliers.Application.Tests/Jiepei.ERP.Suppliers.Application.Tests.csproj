@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Jiepei.ERP.Suppliers</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Jiepei.ERP.Suppliers.Application\Jiepei.ERP.Suppliers.Application.csproj" />
+    <ProjectReference Include="..\Jiepei.ERP.Suppliers.Domain.Tests\Jiepei.ERP.Suppliers.Domain.Tests.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.1" />
+  </ItemGroup>
+
+</Project>

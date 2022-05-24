@@ -1,0 +1,217 @@
+<div class="header-wrapper w1280 clearfix">
+  <a class="logo" href="./index.html">
+    <img src="./images/logo.png" />
+  </a>
+  <ul class="nav clearfix" id="nav">
+    <a href="./index.html" data-name="/index.html"><li>首页</li></a>
+    <a href="./valuation.html" data-name="/valuation.html"><li>上传报价</li></a>
+    <a href="./serviceCenter.html" data-name="/serviceCenter.html"><li>服务中心</li></a>
+    <!-- <a href="./product.html" data-name="/product.html"><li>产品中心</li></a>
+    <a href="./processCapability.html" data-name="/processCapability.html"><li>加工能力</li></a>
+    <a href="./factory.html" data-name="/factory.html"><li>工厂展示</li></a> -->
+    <a href="./aboutus.html" data-name="/aboutus.html"><li> 关于我们</li></a>
+  </ul>
+  <div class="header-right clearfix">
+    <div class="login tr">
+      <a href="javascript:;" class="login-btn" onclick="showLogin()">登录</a>
+      <a href="javascript:;" class="register-btn" onclick="showRegister()">注册</a>
+    </div>
+    <div class="has-login">
+      <p id="dropdown">
+        <span class="membername"></span>
+        <i class="layui-icon layui-icon-down layui-font-12"></i>
+      </p>
+    </div>
+  </div>
+  <!-- 登录注册弹窗 -->
+  <div class="login-register-box">
+    <div class="mask"></div>
+    <!-- 登录 -->
+    <div class="login-wrap">
+      <img class="icon-close" src="./images/icon-close.png" alt="" onclick="closeLogin()">
+      <div class="login-title tc">登录</div>
+      <form class="layui-form" action="" lay-filter="loginForm">
+        <div class="layui-form-item">
+          <input type="text" name="phoneNumber" lay-verify="phoneNumber" placeholder="登录手机号" autocomplete="off" class="layui-input" maxlength="11">
+        </div>
+        <div class="layui-form-item" style="margin-bottom: 25px;">
+          <div class="layui-row">
+            <div class="layui-col-md10">
+              <input type="password" name="password" lay-verify="password" placeholder="输入密码" autocomplete="off" class="layui-input login-password" maxlength="25">
+            </div>
+            <div class="layui-col-md2 tr" style="padding-right: 20px;">
+              <img class="icon-eye-close" src="./images/icon-eye-close.png" alt="">
+              <img class="icon-eye" src="./images/icon-eye.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="layui-form-item save-account">
+          <div class="layui-row">
+            <div class="layui-col-md6">
+              <input type="checkbox" name="remember" value="checked" title="保存账号" lay-skin="primary">
+            </div>
+            <div class="layui-col-md6 tr">
+              <a href="javascript:;" class="forget">忘记密码？</a>
+            </div>
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <button class="layui-btn" lay-submit lay-filter="loginFormBtn">登录</button>
+        </div>
+      </form>
+      <div class="no-account tc">
+        还没有账号? <a href="javascript:;" class="change-login-register">注册</a>
+      </div>
+    </div>
+    <!-- 注册 -->
+    <div class="register-wrap">
+      <img class="icon-close" src="./images/icon-close.png" alt="" onclick="closeRegister()">
+      <div class="register-title tc">欢迎注册变色龙</div>
+      <form class="layui-form" action="" lay-filter="registerForm">
+        <div class="layui-form-item">
+          <input onkeyup="checkAllInput(this)" type="text" name="username" lay-verify="registerPhone" placeholder="请输入手机号" autocomplete="off" class="layui-input" maxlength="11">
+        </div>
+        <div class="layui-form-item">
+          <div class="layui-col-md10">
+            <input onkeyup="checkAllInput(this)" type="password" name="password" lay-verify="registerPass" placeholder="请输入密码" autocomplete="off" class="layui-input login-password1" maxlength="25">
+          </div>
+          <div class="layui-col-md2 tr" style="padding-right: 20px;">
+            <img class="icon-eye-close" src="./images/icon-eye-close.png" alt="">
+            <img class="icon-eye" src="./images/icon-eye.png" alt="">
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <div class="layui-col-md10">
+            <input onkeyup="checkAllInput(this)" type="password" name="confirmPassword" lay-verify="registerConfirmPass" placeholder="确认密码" autocomplete="off" class="layui-input login-password2" maxlength="25">
+          </div>
+          <div class="layui-col-md2 tr" style="padding-right: 20px;">
+            <img class="icon-eye-close" src="./images/icon-eye-close.png" alt="">
+            <img class="icon-eye" src="./images/icon-eye.png" alt="">
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <input type="text" name="promoCode" lay-verify="" placeholder="业务员推广码（选填）" autocomplete="off" class="layui-input">
+        </div>
+        <div class="layui-form-item special-item">
+          <div class="layui-inline" style="width: 254px;margin-right: 5px;">
+            <input onkeyup="checkAllInput(this)" type="text" name="name" lay-verify="registerName" placeholder="请输入姓名" autocomplete="off" class="layui-input" maxlength="10">
+          </div>
+          <div class="layui-inline" style="width: 136px;margin-right: 0;">
+            <div class="layui-row">
+              <div class="layui-col-md6">
+                <input type="radio" name="sex" value="0" title="先生" lay-verify="sex" checked>
+              </div>
+              <div class="layui-col-md6">
+                <input type="radio" name="sex" value="1" title="女士" lay-verify="sex">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="layui-form-item special-item">
+          <div class="layui-inline" style="width: 254px;margin-right: 5px;">
+            <input onkeyup="checkAllInput(this)" type="text" name="verifyCode" lay-verify="verifyCode" placeholder="手机验证码" autocomplete="off" class="layui-input" maxlength="6">
+          </div>
+          <div class="layui-inline" style="width: 136px;margin-right: 0;">
+            <a href="javascript:;" class="layui-btn code-btn" onclick="sendCode()">发送验证码</a>
+          </div>
+        </div>
+        <div class="layui-form-item save-account">
+          <div class="layui-row">
+            <div class="layui-col-md9">
+              <input type="checkbox" name="clause" value="checked" title="我已阅读" lay-skin="primary" lay-filter="clause">
+              <a href="./agreement.html" target="_blank" class="clause">《变色龙网站使用条款》</a>
+            </div>
+            <div class="layui-col-md3 tr">
+              <!-- <a href="./resetPassword.html" class="forget">忘记密码？</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <button class="layui-btn register-submit" disabled lay-submit lay-filter="registerFormBtn">同意条款并注册</button>
+        </div>
+      </form>
+      <div class="has-account tc">
+        已有帐号? <a href="javascript:;" class="change-login-register">立即登录</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 在线客服 -->
+<div class="sidebar">
+				<!-- <div class="print">免费打样</div> -->
+				<ul>
+					<li class="sidebar_list">
+						<img src="./images/icon-qq2.png" alt="" />
+						<div class="emerge">
+							<div class="emerge_box">
+								<p class="contact">QQ咨询（800172130）</p>
+								<div class="say_btn">
+									<p>· 功能和特性   · 价格和优惠</p>
+									<a href="">立即咨询</a>
+								</div>
+								<div class="jt"></div>
+							</div>
+						</div>
+					</li>
+					<li class="sidebar_list">
+						<img src="./images/icon-wx.png" alt="" />
+						<div class="emerge">
+							<div class="emerge_box">
+								<p class="contact">微信咨询（13396500774）</p>
+								<div class="say_btn">
+									<p>· 功能和特性   · 价格和优惠</p>
+									<a >立即咨询</a>
+								</div>
+								<div class="jt"></div>
+							</div>
+						</div>
+					</li>
+					<li class="to-top" style="padding-top: 0;">
+						<a href="#top">
+							<img src="images/index/newIndex/OnTop.png" alt="" />
+						</a>
+						
+					</li>
+				</ul>
+			</div>
+			<script>
+				$(window).scroll(function () {
+            if ($(window).scrollTop() > $(window).height()) {
+            	$(".to-top").css("opacity","1")
+            } else {
+            	$(".to-top").css("opacity","0")
+                
+            }
+					
+					
+				})
+			</script>
+			
+<!--<div class="common-service">
+ div class="service-item">
+    <img class="service-icon" src="./images/icon-service-metal.png" alt="">
+    <div class="service-detail">
+      <h5 class="title">钣金在线客服</h5>
+      <p class="tip">微信扫一扫联系助理工程师</p>
+      <p class="tip">享受一对一技术支持咨询</p>
+      <img class="code-img" src="./images/qrcode-metal.png" alt="">
+      <p class="tip">服务热线（微信同号）</p>
+      <h5 class="phone">15355432879</h5>
+      <a href="javascript:;" class="service-btn"><img src="./images/icon-qq.png" >在线咨询</a>
+    </div>
+    <div class="contact-line"></div>
+  </div>
+  <div class="service-item">
+    <img class="service-icon" src="./images/icon-service-cnc.png" alt="">
+    <div class="service-detail">
+      <h5 class="title">CNC在线客服</h5>
+      <p class="tip">微信扫一扫联系助理工程师</p>
+      <p class="tip">享受一对一技术支持咨询</p>
+      <img class="code-img" src="./images/qrcode-cnc.png" alt="">
+      <p class="tip">服务热线（微信同号）</p>
+      <h5 class="phone">18106562325</h5>
+      <a href="javascript:;" class="service-btn"><img src="./images/icon-qq.png" >在线咨询</a>
+    </div>
+    <div class="contact-line"></div>
+  </div>
+</div>-->

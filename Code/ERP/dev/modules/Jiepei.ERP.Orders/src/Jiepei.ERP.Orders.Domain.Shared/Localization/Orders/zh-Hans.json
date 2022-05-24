@@ -1,0 +1,22 @@
+{
+  "culture": "zh-Hans",
+  "texts": {
+    "ManageYourProfile": "管理个人资料",
+    "SamplePageMessage": "Orders模块的示例页面",
+    "Permission:Orders": "订单管理",
+    "Permission:OrderManagement": "订单管理",
+    "Permission:SubOrderManagement": "子订单管理",
+    "Permission:Create": "创建",
+    "Permission:Search": "查找",
+    "Permission:Detail": "详情",
+    "Permission:Cancel": "取消",
+    "Permission:Check": "审核",
+    "Permission:Complete": "完成",
+    "Permission:Deliver": "发货",
+    "Permission:Manufacture": "投产",
+    "Permission:Offer": "报价",
+    "Permission:OrderEditNote": "订单客服备注",
+    "Permission:DesignChange": "设计变更",
+    "Permission:ChangeDeleiveryDate": "修改交期"
+  }
+}

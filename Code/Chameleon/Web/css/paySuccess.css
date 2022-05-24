@@ -1,0 +1,47 @@
+.pay-success-wrap {
+  padding: 39px 0 348px;
+  background-color: #fff;
+}
+.pay-success {
+  text-align: center;
+  border: 1px solid #E4E7ED;
+  padding: 110px 0 172px;
+}
+.pay-success img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 19px;
+}
+.pay-success-title {
+  font-size: 24px;
+  line-height: 33px;
+  color: #253746;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.pay-success-tip {
+  font-size: 14px;
+  line-height: 24px;
+  color: #253746;
+}
+.pay-success-btn {
+  margin-top: 22px;
+}
+.pay-success-btn .layui-btn {
+  width: 160px;
+  height: 42px;
+  font-size: 16px;
+  line-height: 42px;
+  box-sizing: border-box;
+  margin: 0 10px
+}
+.pay-success-btn .to-valuation {
+  color: #fff;
+  background-color: #009B77;
+  border: 1px solid #009B77;
+}
+.pay-success-btn .to-order {
+  color: #858789;
+  background-color: #fff;
+  border: 1px solid #DCDCDC;
+}

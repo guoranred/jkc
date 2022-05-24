@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  min-width: 1280px;
+  max-width: 1920px;
+  background-color: #f7f7f7;
+}
+a:hover {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
+/* 清除浮动 */
+.clearfix:before,.clearfix:after{
+  display: table;
+  content: "";
+}
+.clearfix:after{
+  clear:both;
+}
+.clearfix{
+  zoom:1;
+}
+/* 省略号 */
+.ellipse {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* 公共部分 */
+.w1280 {
+  width: 1280px;
+  margin: 0 auto;
+  /* overflow: hidden; */
+}
+#header {
+  height: 80px;
+  background-color: #009B77;
+}
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.tl {
+  text-align: left;
+}
+.tc {
+  text-align: center;
+}
+.tr {
+  text-align: right;
+}
+.mr5 {
+  margin-right: 5px;
+}
+/* 按钮 */
+.btn {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px 25px;
+  text-align: center;
+  background-color: #090809;
+  color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #090809;
+  cursor: pointer;
+}
+.btn.btn-grey {
+  color: #253746;
+  background-color: #D9E1E2;
+  border: 1px solid #D9E1E2;
+}
+/* 提示 */
+.common-tip {
+  font-size: 14px;
+  line-height: 40px;
+  color: #FF8F1C;
+  background-color: rgba(255,143,28,0.10);
+  border: 1px solid #FF8F1C;
+  border-radius: 4px;
+  padding: 0 11px;
+}
+.common-tip img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  position: relative;
+  top: -1px;
+}
+.common-tip a {
+  color: #FF8F1C;
+}
+/* 重置layui样式 */
+.layui-btn {
+  border-radius: 5px;
+}
+.layui-btn-sm {
+  font-size: 14px;
+}
+.layui-layer-btn .layui-layer-btn0 {
+  border-color: #009B77!important;
+  background-color: #009B77!important;
+}
+.layui-tab-title {
+  padding: 0 20px;
+}
+.layui-tab-title li {
+  margin-right: 24px;
+  padding: 0 4px;
+}
+.layui-tab-brief>.layui-tab-title .layui-this {
+  color: #333333;
+}
+.layui-tab-brief>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after {
+  border-color: #009B77;
+}
+.layui-form-radio:hover *, .layui-form-radioed, .layui-form-radioed>i {
+  color: #009B77;
+}
+.layui-form-checkbox[lay-skin=primary]:hover i {
+  border-color: #009B77;
+}
+.layui-form-checked[lay-skin=primary] i {
+  border-color: #009B77!important;
+  background-color: #009B77;
+}
+
+.layui-form-onswitch {
+  border-color: #009B77;
+  background-color: #009B77;
+}
+
+.layui-form-label.layui-required:before {
+  content: '*';
+  color: #EE2737;
+  margin-right: 3px;
+  position: relative;
+  top: 3px;
+}
+.layui-form-label {
+  width: 110px;
+}
+.layui-input::placeholder,
+.layui-select::placeholder,
+.layui-textarea::placeholder {
+  color: #999;
+}
+.layui-form-switch {
+  height: 24px;
+  line-height: 24px;
+  min-width: 45px;
+}

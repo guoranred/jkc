@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Abp" Version="6.3.1" />
+    <PackageReference Include="Volo.Abp.Caching" Version="4.2.2" />
+    <PackageReference Include="Volo.Abp.Core" Version="4.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\shareds\Jiepei.ERP.Shared\Jiepei.ERP.Shared.csproj" />
+    <ProjectReference Include="..\..\..\..\shareds\Jiepei.ERP.Utilities\Jiepei.ERP.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>

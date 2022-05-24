@@ -1,0 +1,97 @@
+.about{
+  width:100%;
+  background: #F7F8FC url('../../images/about/banner.jpg') no-repeat center top;
+}
+.about .main-title{
+  padding-top:133px;
+  font-size: 72px;
+  font-weight: bold;
+  color: #fff;
+}
+.about .main-title span{
+  color:#D91900 ;
+}
+.line{
+  width: 158px;
+  height: 4px;
+  background:#D91900;
+  margin:26px auto 20px;
+}
+.main-subtitle{
+  color: #fff;
+  font-size: 24px;
+}
+.about_nav{
+  background: #fff;
+  box-shadow: 0px 6px 18px 2px rgba(162, 162, 162, 0.38);
+  margin-top: 133px;
+  height:120px;
+  line-height: 120px;
+  font-size: 20px;
+}
+.about_nav ul a{display: inline-block;width: 96%;text-align: center;font-weight: bold;color: #666;}
+.about_nav ul a:hover{color:#ee1f04;}
+.about_nav ul li.current a{color: #D91900;}
+.about_intro{
+  margin-top:35px;
+}
+.about_intro .title h2{
+  padding-top:28px;
+  font-size: 32px;
+}
+.about_intro .title p{
+  font-size: 24px;
+  margin-top: 14px;
+  color: #CCCCCC;
+}
+.about_intro .title span{
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #D91900;
+  margin-top: 26px;
+}
+.about_cont{
+  margin-top:35px;
+  line-height: 24px;
+}
+.about_cont p{
+  text-indent: 2em;
+}
+.target{margin-top:40px;}
+.target_intro{
+  padding:53px 35px;
+  background: url('../../images/about/culture.png') no-repeat center top;
+  background-size: 100%;
+}
+.target_intro h2{
+  font-size: 32px;
+  font-weight: bold;
+}
+.target_intro p{
+  font-size: 24px;
+  font-weight: bold;
+  color: #CCCCCC;
+  margin-top: 14px;
+}
+.target_txt{
+  color: #666666;
+  line-height: 24px;
+  text-indent: 2em;
+  margin-top: 16px;
+}
+.ver_cont{
+  text-align: center;
+  margin-top:54px
+}
+.ver_cont h2{
+  margin-top: 12px;
+  font-size: 24px;
+  color: #666666;
+}
+.ver_cont .ver_txt{
+  line-height: 24px;
+  color: #666666;
+  margin-top: 8px;
+}
+.fm{margin-top:50px;text-align: center;}

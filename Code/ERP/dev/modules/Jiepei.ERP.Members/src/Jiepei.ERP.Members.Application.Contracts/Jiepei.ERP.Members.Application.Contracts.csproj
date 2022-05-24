@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Jiepei.ERP.Members</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>obj\Debug\netstandard2.0\Jiepei.ERP.Members.Application.Contracts.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.8" />
+    <PackageReference Include="Volo.Abp.Ddd.Application.Contracts" Version="4.3.3" />
+    <PackageReference Include="Volo.Abp.Authorization" Version="4.3.3" />
+    <ProjectReference Include="..\Jiepei.ERP.Members.Domain.Shared\Jiepei.ERP.Members.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

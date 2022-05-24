@@ -1,0 +1,132 @@
+.pay-wrap {
+  padding: 46px 0;
+}
+.pay-order-info {
+  border: 1px solid #E4E7ED;
+  padding: 13px 20px 20px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.pay-order-info .pay-order-info-title {
+  font-size: 20px;
+  line-height: 27px;
+  color: #253746;
+  margin-bottom: 23px;
+}
+.pay-order-info p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  margin-bottom: 9px;
+}
+.pay-order-info .price-wrap {
+  color: #253746;
+  margin-bottom: 12px;
+}
+.pay-order-info .pay-order-price {
+  font-size: 20px;
+  line-height: 20px;
+  color: #EE2737;
+  font-weight: bold;
+}
+.pay-order-info .pay-order-price:before {
+  content: '￥';
+}
+/* tab */
+.pay-type-tab {
+  border: 1px solid #E4E7ED;
+  background-color: #fff;
+}
+.pay-type-tab .layui-tab-title {
+  border-color: #E4E7ED;
+}
+.layui-tab-content .left {
+  width: 424px;
+}
+.layui-tab-content .right {
+  width: 447px;
+  margin-left: 38px;
+  margin-top: 65px;
+  font-size: 14px;
+  line-height: 29px;
+  color: #333;
+}
+.count-tip {
+  margin-top: 25px;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #333;
+}
+.count-tip span {
+  color: #EE2737;
+}
+.qrcode-box {
+  margin: 65px 50px 10px 72px;
+  padding: 18px 18px 20px;
+  border: 1px solid #E4E7ED;
+}
+.qrcode-box .qrcode-box-wrap {
+  width: 264px;
+  height: 264px;
+  margin-bottom: 6px;
+  overflow: hidden;
+}
+.qrcode-box img {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.qrcode-box .scancode-tip {
+  font-size: 14px;
+  line-height: 19px;
+  color: #333;
+  text-align: center;
+}
+.scancode-fail {
+  padding-left: 20px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 19px;
+  color: #333;
+}
+.scancode-fail span {
+  color: #EE2737;
+  cursor: pointer;
+}
+.scancode-demo {
+  margin-top: 25px;
+  width: 329px;
+  height: 421px;
+}
+/* 问题 */
+.pay-order-bottom {
+  background-color: #FFF6F3;
+  border: 1px solid #E4E7ED;
+  border-top: none;
+  padding: 19px 20px 15px;
+}
+.pay-order-bottom h5 {
+  font-size: 20px;
+  line-height: 27px;
+  color: #253746;
+  font-weight: bold;
+}
+.pay-order-bottom p {
+  font-size: 14px;
+  line-height: 19px;
+  color: #333;
+}
+.pay-order-bottom .pay-problem {
+  margin-left: 227px;
+  display: inline-block;
+  width: 240px;
+  height: 42px;
+  border: 1px solid #DCDCDC;
+  background-color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 16px;
+  line-height: 42px;
+  color: #858789;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我们</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico"/>
+  <link rel="stylesheet" href="./assets/layui-v2.6.8/css/layui.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/about/about.css">
+  <link rel="stylesheet" href="./css/about/news.css">
+</head>
+<body>
+  <div id="header"></div>
+  <div class="about">
+    <div class="w1280">
+      <div class="main-title tc"><span>变色龙</span>精密智造</div>
+      <div class="line"></div>
+      <div class="main-subtitle tc"><span>以 “让产业更高效，让生活更美好” 为企业使命</span></div>
+      <div class="about_nav layui-row">
+        <ul class="layui-col-md6">
+          <li class="layui-col-md3">
+            <a href="aboutus.html">企业文化</a>| 
+          </li>
+          <li class="layui-col-md3"><a href="contactus.html">联系我们</a>|</li>
+          <li class="layui-col-md3 current"><a href="news.html">新闻资讯</a></li>
+        </ul>
+        <div class="layui-col-md6 position">
+          <a href="index.html">首页</a> >
+          <a href="aboutus.html">关于我们</a> >
+          <a href="news.html">新闻资讯</a>
+        </div>
+      </div>
+      <div class="news-list">
+        <div class="contact_title">
+          <h2>新闻资讯</h2>
+          <img src="./images/index/icon-title-line.png" alt="">
+          <p>News information</p>
+        </div>
+        <div class="layui-row layui-col-space40" id="news-wrap">
+          <div class="layui-col-md4">
+            <a href="newsDetail.html?id=1" class="news-item">
+              <img class="news-img" src="./images/about/x6.jpg" alt="">
+              <h5 class="news-title ellipse">关于焊接机器人的14个知...</h5>
+              <p class="news-time">2021-07-06</p>
+              <p class="news-intro">电子器件的小型化使得可以在更小的封装中构建更强大的设备，现代计算系统便是最佳证明...</p>
+            </a>
+          </div>
+          <div class="layui-col-md4">
+            <a href="newsDetail.html?id=1" class="news-item">
+              <img class="news-img" src="./images/about/x6.jpg" alt="">
+              <h5 class="news-title ellipse">关于焊接机器人的14个知...</h5>
+              <p class="news-time">2021-07-06</p>
+              <p class="news-intro">电子器件的小型化使得可以在更小的封装中构建更强大的设备，现代计算系统便是最佳证明...</p>
+            </a>
+          </div>
+          <div class="layui-col-md4">
+            <a href="newsDetail.html?id=1" class="news-item">
+              <img class="news-img" src="./images/about/x6.jpg" alt="">
+              <h5 class="news-title ellipse">关于焊接机器人的14个知...</h5>
+              <p class="news-time">2021-07-06</p>
+              <p class="news-intro">电子器件的小型化使得可以在更小的封装中构建更强大的设备，现代计算系统便是最佳证明...</p>
+            </a>
+          </div>
+          <div class="layui-col-md4">
+            <a href="newsDetail.html?id=1" class="news-item">
+              <img class="news-img" src="./images/about/x6.jpg" alt="">
+              <h5 class="news-title ellipse">关于焊接机器人的14个知...</h5>
+              <p class="news-time">2021-07-06</p>
+              <p class="news-intro">电子器件的小型化使得可以在更小的封装中构建更强大的设备，现代计算系统便是最佳证明...</p>
+            </a>
+          </div>
+          <div class="layui-col-md4">
+            <a href="newsDetail.html?id=1" class="news-item">
+              <img class="news-img" src="./images/about/x6.jpg" alt="">
+              <h5 class="news-title ellipse">关于焊接机器人的14个知...</h5>
+              <p class="news-time">2021-07-06</p>
+              <p class="news-intro">电子器件的小型化使得可以在更小的封装中构建更强大的设备，现代计算系统便是最佳证明...</p>
+            </a>
+          </div>
+          <div class="layui-col-md4">
+            <a href="newsDetail.html?id=1" class="news-item">
+              <img class="news-img" src="./images/about/x6.jpg" alt="">
+              <h5 class="news-title ellipse">关于焊接机器人的14个知...</h5>
+              <p class="news-time">2021-07-06</p>
+              <p class="news-intro">电子器件的小型化使得可以在更小的封装中构建更强大的设备，现代计算系统便是最佳证明...</p>
+            </a>
+          </div>
+        </div>
+        <div id="newspage" class="tc"></div>
+      </div>
+    </div>
+  </div>
+  <!-- 公共底部 -->
+  <div id="footer"></div>
+  <script src="./js/jquery-3.6.0.js"></script>
+  <script src="./assets/layui-v2.6.8/layui.js"></script>
+  <script>
+		var now = 20210806;
+		document.write('<script src="./js/ajax.js?v=' + now + '"><\/script\>');
+		document.write('<script src="./js/util.js?v=' + now + '"><\/script\>');
+    // 公共头和底加载
+    document.write('<script src="./js/loadCommonHtml.js?v=' + now + '"><\/script\>');
+    document.write('<script src="./js/news.js?v=' + now + '"><\/script\>');
+	</script>
+</body>
+</html>

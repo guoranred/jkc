@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>obj\Debug\net5.0\Jiepei.ERP.News.Admin.Application.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ConfigureAwait.Fody" Version="3.3.1" />
+    <PackageReference Include="Fody" Version="6.5.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="4.3.3" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="4.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Jiepei.ERP.Orders\src\Jiepei.ERP.Orders.Admin.Application.Contracts\Jiepei.ERP.Orders.Admin.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Jiepei.ERP.News.Admin.Application.Contracts\Jiepei.ERP.News.Admin.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Jiepei.ERP.News.Domain\Jiepei.ERP.News.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ConfigureAwait.Fody" Version="3.3.1" />
+    <PackageReference Include="Fody" Version="6.5.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="4.3.3" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="4.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\shareds\Jiepei.ERP.Shared\Jiepei.ERP.Shared.csproj" />
+    <ProjectReference Include="..\Jiepei.ERP.News.Domain.Shared\Jiepei.ERP.News.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

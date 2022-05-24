@@ -1,0 +1,380 @@
+.header-wrapper {
+  height: 100%;
+  padding: 12px 0;
+  box-sizing: border-box;
+  line-height: 50px;
+  color: #333;
+}
+.logo {
+  float: left;
+  margin-right: 20px;
+}
+.logo img {
+  width: 60px;
+  height: 67px;
+  position: relative;
+  top: -3px;
+}
+.nav {
+  float: left;
+  line-height: 56px;
+}
+.nav a {
+  float: left;
+  margin: 0 20px;
+}
+.nav a:hover li {
+  color: rgba(255,255,255,0.8);
+}
+.nav a.active li {
+  color: #fff;
+}
+.nav a.active li:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+}
+.nav li {
+  width: 78px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+}
+.header-right {
+  float: right;
+  width: 220px;
+  font-size: 14px;
+  line-height: 55px;
+}
+.header-right .login {
+  float: right;
+}
+.header-right .has-login {
+  float: right;
+  margin-right: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.header-right .has-login .membername {
+  margin-right: 4px;
+}
+.header-right .login a {
+  color: #fff;
+}
+.header-right .login a:hover {
+  opacity: 0.8;
+}
+.header-right .login a.login-btn {
+  margin-right: 21px;
+}
+
+/* 登录注册 */
+.login-register-box .layui-input:hover, .layui-textarea:hover, .login-register-box .layui-input:focus, .layui-textarea:focus {
+  border-color: #F5F5F5!important;
+}
+
+/* 登录 */
+.login-register-box {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+.login-register-box .mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.38);
+}
+.login-wrap {
+  display: none;
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  margin-left: -250px;
+  width: 500px;
+  height: 420px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding-top: 36px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.login-register-box .icon-close {
+  position: absolute;
+  top: 19px;
+  right: 20px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+.login-wrap .login-title {
+  font-size: 24px;
+  line-height: 32px;
+  color: #030303;
+  margin-bottom: 27px;
+}
+.login-wrap .layui-form {
+  padding: 0 50px;
+  margin-bottom: 39px;
+}
+.login-register-box .layui-form-item {
+  background-color: #F5F5F5;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.login-register-box .save-account {
+  margin-bottom: 10px;
+  line-height: 20px;
+  height: 20px;
+  background-color: transparent;
+}
+.login-register-box .icon-eye {
+  display: none;
+  cursor: pointer;
+}
+.login-register-box .icon-eye-close {
+  cursor: pointer;
+}
+.login-wrap .layui-input {
+  font-size: 14px;
+  line-height: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 6px;
+  border-color: #F5F5F5;
+  padding: 0 20px;
+}
+.login-register-box .layui-form-item .layui-form-checkbox[lay-skin=primary] {
+  margin-top: 0;
+}
+.login-wrap .layui-btn {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  background-color: #009B77;
+}
+.login-wrap .no-account {
+  padding: 22px 0 18px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #545454;
+  background-color: #f7f7f7;
+}
+.login-wrap .no-account a {
+  color: #545454;
+}
+.login-wrap .forget {
+  color: #999999;
+}
+
+/* 注册 */
+.register-wrap {
+  display: none;
+  position: absolute;
+  top: 18.5%;
+  left: 50%;
+  margin-left: -250px;
+  width: 500px;
+  height: 560px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding-top: 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.register-wrap .register-title {
+  font-size: 24px;
+  line-height: 32px;
+  color: #030303;
+  margin-bottom: 18px;
+}
+.register-wrap .layui-form {
+  padding: 0 50px;
+  margin-bottom: 31px;
+}
+.register-wrap .layui-form-item {
+  margin-bottom: 14px;
+  line-height: 40px;
+}
+.register-wrap .special-item {
+  background-color: transparent;
+}
+.register-wrap .special-item .layui-input {
+  background-color: #F5F5F5;
+}
+.register-wrap .layui-input {
+  font-size: 14px;
+  line-height: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 6px;
+  border-color: #F5F5F5;
+  padding: 0 20px;
+}
+.register-wrap .layui-inline {
+  margin-bottom: 0;
+}
+.register-wrap .layui-form-radio {
+  margin: 0;
+  line-height: 40px;
+}
+.register-wrap .layui-btn {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  background-color: #009B77;
+}
+.register-wrap .layui-btn:disabled {
+  cursor: no-drop;
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+.register-wrap .register-submit:disabled {
+  background-color: #009B77;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.register-wrap .code-btn {
+  font-size: 14px;
+  color: #fff;
+  background-color: #009B77;
+}
+.register-wrap .save-account {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.register-wrap .save-account .clause {
+  color: #FFA548;
+  margin-left: -5px;
+  position: relative;
+  top: 1px;
+}
+.register-wrap .layui-form-checkbox[lay-skin=primary] span {
+  padding-right: 0;
+}
+.register-wrap .has-account {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 15px 0;
+  background-color: #F7F7F7;
+}
+.register-wrap .has-account a {
+  color: #009B77;
+}
+
+/* 在线客服 */
+.common-service {
+  position: fixed;
+  right: 2px;
+  bottom: 200px;
+  z-index: 99;
+  width: 51px;
+}
+.common-service .service-item {
+  background-color: #262F43;
+  padding: 7px 5px 6px;
+  margin-bottom: 3px;
+}
+.common-service .service-item .service-icon {
+  width: 41px;
+  height: 37px;
+}
+.common-service .contact-line {
+  display: none;
+  width: 10px;
+  height: 307px;
+  position: absolute;
+  left: -10px;
+  top: -73px;
+}
+.common-service .service-detail {
+  display: none;
+  position: absolute;
+  left: -176px;
+  top: -73px;
+  width: 166px;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 18px 0;
+  text-align: center;
+}
+.service-detail .title {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #262F43;
+  margin-bottom: 8px;
+}
+.service-detail .tip {
+  font-size: 12px;
+  line-height: 17px;
+  color: #777;
+}
+.service-detail .code-img {
+  width: 110px;
+  height: 110px;
+  margin: 3px 0 5px;
+}
+.service-detail .phone {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #262F43;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+.service-detail .service-btn {
+  display: block;
+  width: 118px;
+  height: 34px;
+  margin: 0 auto;
+  background-color: #009B77;
+  border-radius: 17px;
+  font-size: 14px;
+  line-height: 34px;
+  text-align: center;
+  color: #fff;
+}
+.service-detail .service-btn img {
+  margin-right: 4px;
+  width: 20px;
+  height: 23px;
+  position: relative;
+  top: -1px;
+}
+.common-service .service-item:hover {
+  background-color: #009B77;
+}
+.common-service .service-item:hover .service-detail, .common-service .service-item:hover .contact-line {
+  display: block;
+}
+
+
+
+/*返回顶部*/
+			.sidebar{width: 50px;position: fixed;right:20px;bottom:20%;z-index: 10000;    min-height: 265px;}
+			.sidebar .print{background: url(../images/index/newIndex/print.png) no-repeat center;background-size: cover;width: 100%;height: 100px;margin-bottom: 8px;color: #fff;text-align: center;padding: 15px 18px;font-size: 14px;line-height: 17px;}
+		
+			.sidebar li{height: 50px;width: 50px;position: relative;font-size: 14px;margin-bottom: 2px;transition: all .5s ease;text-align: center;background: #009B77;border-radius: 6px;padding-top: 11px;box-sizing: border-box;}
+      .sidebar li:hover {
+        background: #008B6B;
+      }
+			.sidebar li:hover .emerge{display: block;}
+			.sidebar li img{display: inline-block;}
+			.sidebar .emerge{width: 200px;padding-top: 0;position: absolute;right: 60px;top: 0;display: none;}
+			.sidebar .emerge_box{position: relative;background: #fff;       padding: 15px; padding-top: 0;    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);}
+			.sidebar .emerge_box .jt{    position: absolute;width: 11px; height: 125px;background: url(https://www.jiepei.com/Content/img/kefu/jt.png) no-repeat center 2px;top: 0;right: -11px;}
+			.sidebar .emerge .contact{height:40px;line-height: 40px;border-bottom: 1px solid #EEEEEE;margin-bottom: 10px;white-space: nowrap;}
+			.sidebar .emerge .say_btn p{color: #999999;}
+			.sidebar .emerge .say_btn a{color: #009B77;display:block;width: 160px;height: 33px;line-height: 31px;text-align: center;border: 2px solid #009B77;margin: 0 auto;margin-top: 8px;border-radius: 4px;}

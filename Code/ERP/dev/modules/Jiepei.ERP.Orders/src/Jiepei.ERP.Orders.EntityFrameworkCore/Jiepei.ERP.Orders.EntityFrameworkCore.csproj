@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>Jiepei.ERP.Orders</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="CncOrders\**" />
+    <Compile Remove="InjectionOrders\**" />
+    <Compile Remove="MoldOrders\**" />
+    <EmbeddedResource Remove="CncOrders\**" />
+    <EmbeddedResource Remove="InjectionOrders\**" />
+    <EmbeddedResource Remove="MoldOrders\**" />
+    <None Remove="CncOrders\**" />
+    <None Remove="InjectionOrders\**" />
+    <None Remove="MoldOrders\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="4.3.0" />
+    <ProjectReference Include="..\Jiepei.ERP.Orders.Domain\Jiepei.ERP.Orders.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

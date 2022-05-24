@@ -1,0 +1,1008 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Jiepei.ERP.Shared</name>
+    </assembly>
+    <members>
+        <member name="T:Jiepei.ERP.Shared.Consumers.Orders.MQ_BaseOrderDto">
+            <summary>
+            基础定义
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_BaseOrderDto.RetryCount">
+            <summary>
+            重试次数
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_BaseOrderDto.ExterOrderNo">
+            <summary>
+            外部关联订单
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_BaseOrderDto.OrderType">
+            <summary>
+            订单类型
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_BaseOrderDto.Origin">
+            <summary>
+            渠道
+            </summary>
+        </member>
+        <member name="T:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderCostDto">
+            <summary>
+            通用订单费用信息
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderCostDto.ProMoney">
+            <summary>
+            产品费
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderCostDto.ShipMoney">
+            <summary>
+            运费
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderCostDto.TaxMoney">
+            <summary>
+            税费
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderCostDto.TaxPoint">
+            <summary>
+            税点
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderCostDto.DiscountMoney">
+            <summary>
+            优惠金额
+            </summary>
+        </member>
+        <member name="T:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDeliveryDto">
+            <summary>
+            通用订单同步地址信息
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDeliveryDto.Weight">
+            <summary>
+            总重量
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDeliveryDto.ReceiverName">
+            <summary>
+            收货人
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDeliveryDto.ReceiverCompany">
+            <summary>
+            收货公司名
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDeliveryDto.ReceiverAddress">
+            <summary>
+            收货详细地址
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDeliveryDto.ReceiverTel">
+            <summary>
+            收货人联系方式
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDeliveryDto.OrderContactName">
+            <summary>
+            订单联系人
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDeliveryDto.OrderContactMobile">
+            <summary>
+            订单联系人手机号
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDeliveryDto.OrderContactQQ">
+            <summary>
+            订单联系人QQ
+            </summary>
+        </member>
+        <member name="T:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDto">
+            <summary>
+            通用订单同步信息
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDto.ExterOrderNo">
+            <summary>
+            关联外部订单
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDto.ApplicationArea">
+            <summary>
+            应用领域
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDto.Usage">
+            <summary>
+            预计年使用量
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDto.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDto.Origin">
+            <summary>
+            渠道来源
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDto.TotalMoney">
+            <summary>
+            总成本
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDto.SellingMoney">
+            <summary>
+            销售价
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDto.PendingMoney">
+            <summary>
+            代付金额
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDto.PaidMoney">
+            <summary>
+            已付金额
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDto.Status">
+            <summary>
+            订单状态
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDto.IsPay">
+            <summary>
+            是否支付
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_OrderDto.PayTime">
+            <summary>
+            付款时间
+            </summary>
+        </member>
+        <member name="T:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_MoldOrderDto">
+             <summary>
+            订单同步 模具信息
+             </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_MoldOrderDto.ProName">
+            <summary>
+            产品名称
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_MoldOrderDto.Picture">
+            <summary>
+            产品图片
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_MoldOrderDto.FileName">
+            <summary>
+            文件名称
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_MoldOrderDto.FilePath">
+            <summary>
+            文件路径
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_MoldOrderDto.Material">
+            <summary>
+            材料
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_MoldOrderDto.Surface">
+            <summary>
+            表面处理
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_MoldOrderDto.Long">
+            <summary>
+            长
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_MoldOrderDto.Width">
+            <summary>
+            宽
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_MoldOrderDto.Height">
+            <summary>
+            高
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_MoldOrderDto.Weight">
+            <summary>
+            重量
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_MoldOrderDto.Color">
+            <summary>
+            颜色
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_OrderTask_MoldOrderDto.Qty">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="T:Jiepei.ERP.Shared.Consumers.Orders.MQ_BasicsDto">
+            <summary>
+            基础定义
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_BasicsDto.RetryCount">
+            <summary>
+            重试次数
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_BasicsDto.OrderNo">
+            <summary>
+            订单号，对ERP来说，这个是ExterOrderNo
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_BasicsDto.OrderType">
+            <summary>
+            订单类型
+            </summary>
+        </member>
+        <member name="T:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto">
+            <summary>
+            通用订单同步信息
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.Order">
+            <summary>
+            订单信息
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.OrderCost">
+            <summary>
+            订单金额信息
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.OrderDelivery">
+            <summary>
+            订单收货信息
+            </summary>
+        </member>
+        <member name="T:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.OrderInfo">
+            <summary>
+            订单信息
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.OrderInfo.ApplicationArea">
+            <summary>
+            应用领域
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.OrderInfo.Usage">
+            <summary>
+            预计年使用量
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.OrderInfo.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.OrderInfo.Origin">
+            <summary>
+            渠道来源
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.OrderInfo.TotalMoney">
+            <summary>
+            总成本
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.OrderInfo.SellingMoney">
+            <summary>
+            销售价
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.OrderInfo.PendingMoney">
+            <summary>
+            代付金额
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.OrderInfo.PaidMoney">
+            <summary>
+            已付金额
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.OrderInfo.Status">
+            <summary>
+            订单状态
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.OrderInfo.IsPay">
+            <summary>
+            是否支付
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.OrderInfo.PayTime">
+            <summary>
+            付款时间
+            </summary>
+        </member>
+        <member name="T:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.Cost">
+            <summary>
+            订单费用信息
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.Cost.ProMoney">
+            <summary>
+            产品费
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.Cost.ShipMoney">
+            <summary>
+            运费
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.Cost.TaxMoney">
+            <summary>
+            税费
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.Cost.TaxPoint">
+            <summary>
+            税点
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.Cost.DiscountMoney">
+            <summary>
+            优惠金额
+            </summary>
+        </member>
+        <member name="T:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.Delivery">
+            <summary>
+            订单收件信息
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.Delivery.Weight">
+            <summary>
+            总重量
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.Delivery.ReceiverName">
+            <summary>
+            收货人
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.Delivery.ReceiverCompany">
+            <summary>
+            收货公司名
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.Delivery.ReceiverAddress">
+            <summary>
+            收货详细地址
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.Delivery.ReceiverTel">
+            <summary>
+            收货人联系方式
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.Delivery.OrderContactName">
+            <summary>
+            订单联系人
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.Delivery.OrderContactMobile">
+            <summary>
+            订单联系人手机号
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Common_OrderTaskDto.Delivery.OrderContactQQ">
+            <summary>
+            订单联系人QQ
+            </summary>
+        </member>
+        <member name="T:Jiepei.ERP.Shared.Consumers.Orders.MQ_Mold_OrderCancelDto">
+            <summary>
+            模具渠道订单取消同步定义
+            </summary>
+        </member>
+      <member name="T:Jiepei.ERP.Shared.Consumers.Orders.MQ_Mold_OrderReceiveDto">
+        <summary>
+          模具渠道订单收货同步定义
+        </summary>
+      </member>
+        <member name="T:Jiepei.ERP.Shared.Consumers.Orders.MQ_Mold_OrderPaymentDto">
+            <summary>
+            模具渠道订单付款同步定义
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Mold_OrderPaymentDto.PendingMoney">
+            <summary>
+            代付金额
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Mold_OrderPaymentDto.PaidMoney">
+            <summary>
+            已付金额
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Mold_OrderPaymentDto.PayTime">
+            <summary>
+            付款时间
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Mold_OrderPaymentDto.PayModel">
+            <summary>
+            付款方式
+            </summary>
+        </member>
+        <member name="T:Jiepei.ERP.Shared.Consumers.Orders.MQ_Mold_OrderStageDto">
+            <summary>
+            模具渠道订单分期付款同步定义
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Mold_OrderStageDto.IsFirstIssue">
+            <summary>
+            是否首期
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Mold_OrderStageDto.PendingMoney">
+            <summary>
+            代付金额
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Mold_OrderStageDto.PaidMoney">
+            <summary>
+            已付金额
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Mold_OrderStageDto.PayTime">
+            <summary>
+            付款时间
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Mold_OrderStageDto.PayModel">
+            <summary>
+            付款方式
+            </summary>
+        </member>
+        <member name="T:Jiepei.ERP.Shared.Consumers.Orders.MQ_Mold_OrderTaskDto">
+            <summary>
+            模具渠道订单同步定义
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Mold_OrderTaskDto.Order">
+            <summary>
+            订单信息
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Mold_OrderTaskDto.OrderCost">
+            <summary>
+            订单费用信息
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Mold_OrderTaskDto.OrderDelivery">
+            <summary>
+            订单收件信息
+            </summary>
+        </member>
+        <member name="P:Jiepei.ERP.Shared.Consumers.Orders.MQ_Mold_OrderTaskDto.MoldOrder">
+            <summary>
+            模具订单信息
+            </summary>
+        </member>
+        <member name="T:Jiepei.ERP.Shared.Consumers.RabbitMQConstant">
+            <summary>
+            RabbitMQ 常量定义
+            </summary>
+        </member>
+        <member name="T:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Mold">
+            <summary>
+            模具订单MQ定义
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Mold.Queue_OrderTake">
+            <summary>
+            模具订单同步队列
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Mold.Exchange_OrderTake">
+            <summary>
+            模具订单同步交换机
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Mold.Route_OrderTake">
+            <summary>
+            模具订单同步路由
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Mold.Queue_OrderCancel">
+            <summary>
+            模具订单取消队列
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Mold.Exchange_OrderCancel">
+            <summary>
+            模具订单取消交换机
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Mold.Route_OrderCancel">
+            <summary>
+            模具订单取消路由
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Mold.Queue_OrderPayment">
+            <summary>
+            模具订单付款队列
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Mold.Exchange_OrderPayment">
+            <summary>
+            模具订单付款交换机
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Mold.Route_OrderPayment">
+            <summary>
+            模具订单付款路由
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Mold.Queue_OrderStage">
+            <summary>
+            模具订单分期付款队列
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Mold.Exchange_OrderStage">
+            <summary>
+            模具订单分期付款交换机
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Mold.Route_OrderStage">
+            <summary>
+            模具订单分期付款路由
+            </summary>
+        </member>
+        <member name="T:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Injection">
+            <summary>
+            注塑订单MQ定义
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Injection.Queue_OrderTake">
+            <summary>
+            注塑订单同步队列
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Injection.Exchange_OrderTake">
+            <summary>
+            注塑订单同步交换机
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Injection.Route_OrderTake">
+            <summary>
+            注塑订单同步路由
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Injection.Queue_OrderCancel">
+            <summary>
+            注塑订单取消队列
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Injection.Exchange_OrderCancel">
+            <summary>
+            注塑订单取消交换机
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Injection.Route_OrderCancel">
+            <summary>
+            注塑订单取消路由
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Injection.Queue_OrderPayment">
+            <summary>
+            注塑订单付款队列
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Injection.Exchange_OrderPayment">
+            <summary>
+            注塑订单付款交换机
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Injection.Route_OrderPayment">
+            <summary>
+            注塑订单付款路由
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Injection.Queue_OrderStage">
+            <summary>
+            注塑订单分期付款队列
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Injection.Exchange_OrderStage">
+            <summary>
+            注塑订单分期付款交换机
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Injection.Route_OrderStage">
+            <summary>
+            注塑订单分期付款路由
+            </summary>
+        </member>
+        <member name="T:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Cnc">
+            <summary>
+            CNC订单MQ定义
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Cnc.Queue_OrderTake">
+            <summary>
+            CNC订单同步队列
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Cnc.Exchange_OrderTake">
+            <summary>
+            CNC订单同步交换机
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Cnc.Route_OrderTake">
+            <summary>
+            CNC订单同步路由
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Cnc.Queue_OrderCancel">
+            <summary>
+            CNC订单取消队列
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Cnc.Exchange_OrderCancel">
+            <summary>
+            CNC订单取消交换机
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Cnc.Route_OrderCancel">
+            <summary>
+            CNC订单取消路由
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Cnc.Queue_OrderPayment">
+            <summary>
+            CNC订单付款队列
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Cnc.Exchange_OrderPayment">
+            <summary>
+            CNC订单付款交换机
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Cnc.Route_OrderPayment">
+            <summary>
+            CNC订单付款路由
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Cnc.Queue_OrderStage">
+            <summary>
+            CNC订单分期付款队列
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Cnc.Exchange_OrderStage">
+            <summary>
+            CNC订单分期付款交换机
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Shared.Consumers.RabbitMQConstant.Cnc.Route_OrderStage">
+            <summary>
+            CNC订单分期付款路由
+            </summary>
+        </member>
+        <member name="T:Jiepei.ERP.Commons.EnumOrigin">
+            <summary>
+            渠道
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Commons.EnumOrigin.InternalTrade">
+            <summary>
+            捷配内贸官网
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Commons.EnumOrigin.TaoBao">
+            <summary>
+            淘宝渠道
+            </summary>
+        </member>
+        <member name="T:Jiepei.ERP.Molds.EnumMoldMaterial">
+            <summary>
+            模具材料
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Molds.EnumMoldMaterial.Default">
+            <summary>
+            默认
+            </summary>  
+        </member>
+        <member name="F:Jiepei.ERP.Molds.EnumMoldMaterial.Alufer">
+            <summary>
+            铝合金
+            </summary>    
+        </member>
+        <member name="F:Jiepei.ERP.Molds.EnumMoldMaterial.Stainless">
+            <summary>
+            不锈钢
+            </summary>  
+        </member>
+        <member name="F:Jiepei.ERP.Molds.EnumMoldMaterial.Steel">
+            <summary>
+            钢
+            </summary>  
+        </member>
+        <member name="F:Jiepei.ERP.Molds.EnumMoldMaterial.Other">
+            <summary>
+            其他
+            </summary>    
+        </member>
+        <member name="T:Jiepei.ERP.Molds.EnumMoldOrderStatus">
+            <summary>
+            模具订单状态
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Molds.EnumMoldOrderStatus.WaitCheck">
+            <summary>
+            待审核
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Molds.EnumMoldOrderStatus.CheckedNoPass">
+            <summary>
+            审核不通过
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Molds.EnumMoldOrderStatus.CheckedPass">
+            <summary>
+            审核通过
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Molds.EnumMoldOrderStatus.OfferComplete">
+            <summary>
+            报价完成
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Molds.EnumMoldOrderStatus.Cancel">
+            <summary>
+            取消
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Molds.EnumMoldOrderStatus.SureOrder">
+            <summary>
+            确认下单
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Molds.EnumMoldOrderStatus.Design">
+            <summary>
+            模具设计
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Molds.EnumMoldOrderStatus.Purchasing">
+            <summary>
+            生产中
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Molds.EnumMoldOrderStatus.WaitSend">
+            <summary>
+            等待发货
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Molds.EnumMoldOrderStatus.HaveSend">
+            <summary>
+            已发货
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Molds.EnumMoldOrderStatus.Finish">
+            <summary>
+            交易成功
+            </summary>
+        </member>
+        <member name="T:Jiepei.ERP.Molds.EnumMoldSurface">
+            <summary>
+            模具表面处理
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Molds.EnumMoldSurface.Default">
+            <summary>
+            默认
+            </summary>   
+        </member>
+        <member name="F:Jiepei.ERP.Molds.EnumMoldSurface.Anodized">
+            <summary>
+            阳极氧化
+            </summary>      
+        </member>
+        <member name="F:Jiepei.ERP.Molds.EnumMoldSurface.Colouring">
+             <summary>
+            着色氧化
+             </summary>   
+        </member>
+        <member name="F:Jiepei.ERP.Molds.EnumMoldSurface.Wire">
+            <summary>
+            拉丝
+            </summary>  
+        </member>
+        <member name="F:Jiepei.ERP.Molds.EnumMoldSurface.Other">
+            <summary>
+            其他
+            </summary>  
+        </member>
+        <member name="T:Jiepei.ERP.Orders.EnumApplicationArea">
+            <summary>
+            应用领域
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumApplicationArea.AutomobileIndustry">
+            <summary>
+            汽车行业
+            </summary>     
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumApplicationArea.Consumer">
+            <summary>
+            消费产品
+            </summary>     
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumApplicationArea.DailyNecessities">
+            <summary>
+            日常用品
+            </summary>      
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumApplicationArea.Intelligent">
+            <summary>
+            智能硬件
+            </summary>       
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumApplicationArea.Electronics">
+            <summary>
+            电子产品
+            </summary>      
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumApplicationArea.Energy">
+            <summary>
+            能源设备
+            </summary>      
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumApplicationArea.AutoEquipment">
+            <summary>
+            自动设备
+            </summary>      
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumApplicationArea.Game">
+            <summary>
+            游戏动漫
+            </summary>     
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumApplicationArea.Medical">
+            <summary>
+            医疗牙科
+            </summary>      
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumApplicationArea.ScientificResearch">
+            <summary>
+            高校科研
+            </summary>     
+        </member>
+        <member name="T:Jiepei.ERP.Orders.EnumOrderStatus">
+            <summary>
+            订单状态
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumOrderStatus.WaitCheck">
+            <summary>
+            待审核
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumOrderStatus.Cancel">
+            <summary>
+            取消
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumOrderStatus.CheckedNoPass">
+            <summary>
+            审核不通过
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumOrderStatus.CheckedPass">
+            <summary>
+            审核通过
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumOrderStatus.SureOrder">
+            <summary>
+            确认下单
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumOrderStatus.Purchasing">
+            <summary>
+            生产中
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumOrderStatus.WaitSend">
+            <summary>
+            等待发货
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumOrderStatus.HaveSend">
+            <summary>
+            已发货
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumOrderStatus.Finish">
+            <summary>
+            交易成功
+            </summary>
+        </member>
+        <member name="T:Jiepei.ERP.Orders.EnumOrderType">
+            <summary>
+            订单类型
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumOrderType.Mold">
+            <summary>
+            模具
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumOrderType.Injection">
+            <summary>
+            注塑
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumOrderType.Cnc">
+            <summary>
+            CNC
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumOrderType.Print3D">
+            <summary>
+            3D打印
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumOrderType.SheetMetal">
+            <summary>
+            钣金
+            </summary>
+        </member>
+        <member name="T:Jiepei.ERP.Orders.EnumPayMode">
+            <summary>
+            付款方式
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumPayMode.Cash">
+            <summary>
+            现金
+            </summary>
+        </member>
+        <member name="T:Jiepei.ERP.Orders.EnumUsage">
+            <summary>
+            预计年使用量
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumUsage.UnOne">
+            <summary>
+            一万一下
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumUsage.UnFive">
+            <summary>
+            一万到五万
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumUsage.UnTen">
+            <summary>
+            五万到十万
+            </summary>
+        </member>
+        <member name="F:Jiepei.ERP.Orders.EnumUsage.UpTen">
+            <summary>
+            十万以上
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>Jiepei.ERP.News</RootNamespace>
+    <UserSecretsId>23ced79f-f95b-42a7-aeee-5612542bef4d</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="4.3.3" />
+    <ProjectReference Include="..\Jiepei.ERP.News.Domain\Jiepei.ERP.News.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

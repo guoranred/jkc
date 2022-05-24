@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Jiepei.ERP.Suppliers.Common\Jiepei.ERP.Suppliers.Common.csproj" />
+  </ItemGroup>
+
+</Project>
